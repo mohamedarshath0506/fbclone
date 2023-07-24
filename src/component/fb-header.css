@@ -1,0 +1,369 @@
+.fb-clone-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+    background-color: #fff;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+}
+
+.fb-clone-container h1 {
+    color: #151fad;
+}
+
+.fb-clone-container input  {
+    font-size: 18px;
+    width: 760px;
+    padding: 15px 45px;
+    border-radius: 25px;
+    border: none;
+    background-color: #8080804a;
+}
+
+.fb-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.fb-icons img {
+    padding: 15px;
+    border-radius: 35px;
+    background-color: #8080804a;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    /* z-index: 1; */
+    color: #fff;
+    background-color: gray
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.menu-contsiner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    margin: 10px;
+    padding: 0 0 0 15px;
+    border-radius: 15px;
+}
+
+.black {
+    border-radius: 15px;
+}
+.menu-contsiner:hover {
+    background-color: #80808024;
+}
+
+.hover-container {
+    /* position: relative; */
+    height: 100vh;
+}
+
+.hover-page {
+    display: flex;
+    justify-content: space-evenly;
+    /* position: absolute;
+    top: 15px;
+    left: 715px; */
+    gap: 35px;
+    width: 840px;
+    padding: 20px 0;
+    margin: 20px 0 0;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* .link:hover {
+    border-radius: 5px;
+    color: #000;
+    background-color: #1c42dbfa;
+} */
+
+/* .reels-content {
+    display: flex;
+    gap: 15px;
+    padding: 0 50px;
+} */
+
+.menu-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    width: 158px;
+    font-weight: 900;
+    /* margin: 10px; */
+    padding: 0 0 0 15px;
+    border-radius: 10px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-content:hover {
+    /* color: #047ae1; */
+    background-color: #80808024;
+}
+
+nav a.active {
+    border-radius: 5px;
+    color: #047ae1;
+    /* background-color: #1c42dbfa; */
+}
+
+.stories-reels-rooms-page {
+    /* position: absolute;
+    top: 125px;
+    left: 715px;  */
+    width: 840px;
+    height: 345px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.stories-reels-rooms-page img {
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.stories-name {
+    position: absolute;
+    left: 35px;
+    bottom: 30px;
+    color: #fff;
+}
+
+.stories-container {
+    position: relative;
+}
+
+.stories-icons {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    border-radius: 20px;
+    background-color: cornsilk;
+}
+
+.i-icon {
+    /* position: absolute;
+    left: 225px;
+    top: 23px; */
+    border: 1px solid;
+    padding: 2px;
+    border-radius: 15px;
+}
+.create-container {
+    width: 230px;
+    border: 2px solid;
+    margin: 15px;
+    height: 295px;
+    padding: 10px;
+}
+
+.create-container:hover {
+    background-color: #80808024;
+}
+
+.create-container img {
+    border: 1px solid;
+    padding: 12px;
+    margin: 35px 0 40px;
+    border-radius: 35px;
+    /* background-color: #80808042; */
+}
+
+.create-container h4 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.create-button {
+    width: 190px;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 35px 0;
+    padding: 7px;
+    color: #047ae1;
+    background-color: #fff;
+    
+}
+
+.create-button:hover {
+    /* color: #047ae1; */
+    background-color: #80808024;
+}
+
+.friend-content{
+    display: flex;
+    flex-direction: inherit;
+    text-align: left;
+}
+
+.friend {
+    margin: 100px 0 0 0;
+}
+
+.mind-container {
+    position: absolute;
+    left: 715px;
+    top: 490px;
+}
+
+.live-container {
+    width: 840px;
+    border-radius: 10px;
+    margin: 25px 0 0;
+    background-color: #fff;
+}
+
+.mind-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.mind-content img {
+    border-radius: 25px;
+}
+
+.mind-content input {
+    width: 700px;
+    font-size: 19px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+    background-color: #80808026;
+}
+
+.live-line {
+    margin: 0 20px;
+}
+
+.feeling-container{
+    display: flex;
+    justify-content: space-around;
+    /* padding: 15px 0; */
+}
+
+.your-mind-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.post-container {
+    width: 840px;
+    /* position: absolute;
+    top: 660px;
+    left: 715px; */
+    background-color: #fff;
+}
+
+.post-page {
+    width: 818px;
+    /* position: absolute;
+    top: 200px;
+    left: 715px; */
+    /* background-color: #fff; */
+    padding: 10px;
+}
+
+.post {
+    /* padding: 20px 0; */
+    margin: 10px 0;
+    /* border: 2px solid; */
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.profil-post-page {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profil {
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding: 5px 18px; */
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.close-page {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.profil img {
+    border-radius: 20px;
+}
+
+.like-comment-share-btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.content p {
+    font-weight: 500;
+}
+
+.sideMenu {
+    width: 30%;
+    float: left;
+}
+
+.reelsMenu{
+    width: 30%;
+    float: left;
+}
