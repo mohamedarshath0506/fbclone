@@ -10,40 +10,47 @@ import Page from './component/page';
 import SideBarMenus from './component/side-bar-menus';
 import ReelsMenu from './component/reel-menu';
 import YourMind from './component/your-mind';
+import AccountDetails from './component/accound-details';
+import Videos from './component/videos';
+import MarkerPlace from './component/marker-place';
+import Games from './component/games';
 
 function App() {
   return (
     <div className="App">
       <FbHeader />
-      <div className='sideMenu'>
-        <SideBarMenus />
+        <div className='section-container'>
+          <div className='sideMenu'>
+            <SideBarMenus />
+          </div>
+
+          <div className='reelsMenu'>
+            {/* <ReelsMenu /> */}
+            <Routes>
+            {/* <Route path='/' element={<ReelsMenu />} /> */}
+            
+              <Route path='/stories' element={<ReelsMenu />}>
+              
+                <Route path='/stories/stories' element={<Stories />} /> 
+                <Route path='/stories/reels' element={<Reels />} />
+                <Route path='/stories/rooms' element={<Rooms/>} />
+                
+              </Route>
+              {/* <Route path='/accountDetails' element={<AccountDetails/>} /> */}
+            </Routes>
+            {/* <YourMind />
+            <Page /> */}
+         <div className='reelsMenus'>
+          <Routes>
+            <Route path='/accountDetails' element={<AccountDetails/>} />
+            <Route path='/videos' element={<Videos/>} />
+            <Route path='/markerplace' element={<MarkerPlace />} />
+            <Route path='/games' element={<Games />} />
+          </Routes>
       </div>
-      <div className='reelsMenu'>
-        <ReelsMenu />
-        <Stories />
-        <YourMind />
-        <Page />
-        {/* <Routes>
-          <Route path='/' element={<ReelsMenu />}>
-            <Route path='/stories' element={<Stories />} />
-            <Route path='/reels' element={<Reels />} />
-            <Route path='/rooms' element={<Rooms />} />
-          </Route>
-        </Routes> */}
-      </div>
-      {/* <Menus /> */}
-      {/* <Stories />
-      <Reels />
-      <Rooms /> */}
+          </div>
+        </div>
       
-      {/* <Routes>
-        <Route path='/' element={<Menus />}>
-          <Route path="/home/stories" element={<Stories />} />
-          <Route path='/home/reels' element={<Reels />} />
-          <Route path="/home/rooms" element={<Rooms />} />
-        </Route>
-      </Routes> */}
-     {/* <Page /> */}
     </div>
   );
 }

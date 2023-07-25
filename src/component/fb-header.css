@@ -1,24 +1,56 @@
 .fb-clone-container {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 45px;
+    padding: 0 45px; */
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    /* height: 80px; */
+    float: left;
+    padding: 20px 0 0;
+    position: fixed;
+    z-index: 99;
     background-color: #fff;
 }
 
+.section-container {
+    margin: 95px 0 0 0;
+    width: 100%;
+    float: left;
+}
+
+
+.container {
+    margin: auto;
+    width: 98%;
+}
+.header {
+    width: 10%;
+    float: left;
+    text-align: left;
+}
 .search-bar {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
+    position: relative; */
+    float: left;
+    text-align: right;
+    width: 56%;
     position: relative;
 }
 
+
 .search-icon {
     position: absolute;
-    left: 10px;
+    top: 10px;
+    left: 460px;
 }
 
-.fb-clone-container h1 {
+.header h1 {
+    margin: 0;
     color: #151fad;
 }
 
@@ -32,8 +64,11 @@
 }
 
 .fb-icons {
-    display: flex;
-    gap: 20px;
+    /* display: flex;
+    gap: 20px; */
+    width: 30%;
+    float: right;
+    text-align: right;
 }
 
 .fb-icons img {
@@ -45,22 +80,24 @@
 .tooltip {
     position: relative;
     display: inline-block;
+    margin-right: 15px;
+    z-index: 1;
 }
   
 .tooltip .tooltiptext {
-    visibility: hidden;
+    display: none;
     width: 100px;
     text-align: center;
     border-radius: 6px;
     padding: 5px;
     position: absolute;
-    /* z-index: 1; */
     color: #fff;
-    background-color: gray
+    background-color: gray;
+    top: 55px;
 }
   
 .tooltip:hover .tooltiptext {
-    visibility: visible;
+    display: block;
 }
 
 .menu-contsiner {
@@ -72,6 +109,9 @@
     margin: 10px;
     padding: 0 0 0 15px;
     border-radius: 15px;
+    text-decoration: none;
+    color: #000;
+    /* border: 1px solid; */
 }
 
 .black {
@@ -82,8 +122,12 @@
 }
 
 .hover-container {
-    /* position: relative; */
+    /* position: fixed; */
     height: 100vh;
+}
+
+.fixed-content {
+    position: fixed;
 }
 
 .hover-page {
@@ -142,6 +186,7 @@ nav a.active {
     /* position: absolute;
     top: 125px;
     left: 715px;  */
+    position: relative;
     width: 840px;
     height: 345px;
     border-radius: 10px;
@@ -175,14 +220,15 @@ nav a.active {
     background-color: cornsilk;
 }
 
-.i-icon {
-    /* position: absolute;
-    left: 225px;
-    top: 23px; */
+.i-icons {
+    position: absolute;
+    left: 213px;
+    top: 22px;
     border: 1px solid;
     padding: 2px;
-    border-radius: 15px;
+    border-radius: 25px;
 }
+
 .create-container {
     width: 230px;
     border: 2px solid;
@@ -361,9 +407,147 @@ nav a.active {
 .sideMenu {
     width: 30%;
     float: left;
+    position: relative;
+    height: 100vh;
+    /* top: 100px; */
 }
 
 .reelsMenu{
-    width: 30%;
+    width: 40%;
     float: left;
+}
+
+.like-content {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 158px; */
+    font-weight: 900;
+    /* margin: 10px; */
+    border-radius: 10px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.like-content:hover {
+    /* color: #047ae1; */
+ 
+    background-color: #80808024;
+}
+
+.comment-content {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 158px; */
+    font-weight: 900;
+    /* margin: 10px; */
+    border-radius: 10px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+.comment-content:hover {
+    /* color: #047ae1; */
+    background-color: #80808024;
+}
+
+.share-content {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 158px; */
+    font-weight: 900;
+    /* margin: 10px; */
+    border-radius: 10px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+.share-content:hover {
+    /* color: #047ae1; */
+    background-color: #80808024;
+}
+
+.account-container {
+    position: relative;
+}
+
+.account-container img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+/* 
+.reelsMenus {
+    width: 58%;
+    float: left;
+} */
+
+.create-position {
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+}
+
+.create-with-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 195px;
+    padding: 5px;
+    margin: 0;
+    border-radius: 10px;
+    font-weight: 800;
+    gap: 10px;
+    color: #fff;
+    background-color: #f8eeee94;
+}
+
+.camera-position {
+    position: absolute;
+    bottom: 30px;
+    right: 80px;
+}
+
+.stories-names {
+    position: relative;
+    width: 840px;
+    /* height: 345px; */
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+
+.tooltips {
+    position: relative;
+    display: inline-block;
+    margin-right: 15px;
+    z-index: 1;
+}
+  
+.tooltips .icons {
+    display: none;
+    width: 100px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    color: #fff;
+    background-color: gray;
+    top: 55px;
+}
+  
+.tooltips:hover .icons {
+    display: block;
 }

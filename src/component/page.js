@@ -11,6 +11,7 @@ import like from "../image/like.png"
 import comment from "../image/comment.png"
 import share from "../image/share.png"
 import multiple from "../image/multiple.png"
+import photo from "../image/photo-1522770179533-24471fcdba45.jpeg"
 
 
 function Page() {
@@ -35,18 +36,21 @@ function Page() {
                     </div>
                     <hr />
                     <div className="like-comment-share-btn">
-                        <div className="content">
+
+                        <div className="content like-content">
                             <img src={like} width={30} />
                             <p>Like</p>
                         </div>
-                        <div className="content">
+                        
+                        <div className="content comment-content">
                             <img src={comment} width={30} />
                             <p>Comment</p>
                         </div>
-                        <div className="content">
+                        <div className="content share-content">
                             <img src={share} width={30}/>
                             <p>Share</p>
                         </div>
+                        
                     </div>
                 </div>
 
@@ -66,20 +70,99 @@ function Page() {
                     </div>
                     <hr />
                     <div className="like-comment-share-btn">
-                        <div className="content">
+                        <div className="content like-content">
                             <img src={like} width={30} />
                             <p>Like</p>
                         </div>
-                        <div className="content">
+                        <div className="content comment-content">
                             <img src={comment} width={30} />
                             <p>Comment</p>
                         </div>
-                        <div className="content">
+                        <div className="content share-content">
                             <img src={share} width={30}/>
                             <p>Share</p>
                         </div>
                     </div>
                 </div>
+
+
+
+                {/* <div>
+            <div className="stories-reels-rooms-page">
+
+                <div className="stories-container" >
+                    <div className="stories-icons">
+                        
+                    </div>
+                    
+                    <p className="stories-names">Arshath</p>
+                </div>
+
+                <div className="stories-container">
+                    <div className="stories-icons">
+                      
+                    </div>
+                   
+                    <p className="stories-names">Arshath</p>
+                </div>
+
+                <div className="stories-container">
+                    <div className="stories-icons">
+                      
+                    </div>
+                   
+                    <p className="stories-names">Arshath</p>
+                </div>
+
+                <div className="stories-container">
+                    <div className="stories-icons">
+                      
+                    </div>
+                   
+                    <p className="stories-names">Arshath</p>
+                </div>
+
+                <div className="stories-container">
+                    <div className="stories-icons">
+                        
+                    </div>
+                    
+                    <p className="stories-names">Arshath</p>
+                </div>
+
+                <div className="stories-container">
+                    <div className="stories-icons">
+                        
+                    </div>
+                   
+                    <p className="stories-names">Arshath</p>
+                </div>
+
+                <div className="stories-container">
+                    <div className="stories-icons">
+                       
+                    </div>
+                   
+                    <p className="stories-names">Arshath</p>
+                </div>
+
+                <div className="stories-container">
+                    <div className="stories-icons">
+                        
+                    </div>
+                  
+                    <p className="stories-names">Arshath</p>
+                </div>
+                
+            </div>
+        </div> */}
+
+
+
+
+
+
+
 
                 <div className="post">
                     <div className="profil-post-page">
@@ -97,15 +180,15 @@ function Page() {
                     </div>
                     <hr />
                     <div className="like-comment-share-btn">
-                        <div className="content">
+                        <div className="content like-content">
                             <img src={like} width={30} />
                             <p>Like</p>
                         </div>
-                        <div className="content">
+                        <div className="content comment-content">
                             <img src={comment} width={30} />
                             <p>Comment</p>
                         </div>
-                        <div className="content">
+                        <div className="content share-content">
                             <img src={share} width={30}/>
                             <p>Share</p>
                         </div>
@@ -128,15 +211,15 @@ function Page() {
                     </div>
                     <hr />
                     <div className="like-comment-share-btn">
-                        <div className="content">
+                        <div className="content like-content">
                             <img src={like} width={30} />
                             <p>Like</p>
                         </div>
-                        <div className="content">
+                        <div className="content comment-content">
                             <img src={comment} width={30} />
                             <p>Comment</p>
                         </div>
-                        <div className="content">
+                        <div className="content share-content">
                             <img src={share} width={30}/>
                             <p>Share</p>
                         </div>
@@ -159,15 +242,15 @@ function Page() {
                     </div>
                     <hr />
                     <div className="like-comment-share-btn">
-                        <div className="content">
+                        <div className="content like-content">
                             <img src={like} width={30} />
                             <p>Like</p>
                         </div>
-                        <div className="content">
+                        <div className="content comment-content">
                             <img src={comment} width={30} />
                             <p>Comment</p>
                         </div>
-                        <div className="content">
+                        <div className="content share-content">
                             <img src={share} width={30}/>
                             <p>Share</p>
                         </div>

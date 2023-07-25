@@ -5,15 +5,12 @@ import people from "../image/people.png"
 
 function Rooms() {
     return(
-        <div>
-             {/* <div className="i-container">
-                    <img src={i} width={15} height={15} className="i-icon" />
-                </div> */}
+        // <div>
              <div className="stories-reels-rooms-page">
-                <div>
+                <div className="i-icons">
                     <img src={i} width={15} height={15} className="i-icon" />
                 </div>
-               {/* <div> */}
+
                <div>
                     <div className="create-container">
                         <img src={video} width={40}  />
@@ -38,7 +35,7 @@ function Rooms() {
                     </div>
                {/* </div> */}
             </div>
-        </div>
+        // </div>
     )
 }
 
