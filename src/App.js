@@ -14,6 +14,7 @@ import AccountDetails from './component/accound-details';
 import Videos from './component/videos';
 import MarkerPlace from './component/marker-place';
 import Games from './component/games';
+import Messenger from './component/messenger';
 
 function App() {
   return (
@@ -23,31 +24,28 @@ function App() {
           <div className='sideMenu'>
             <SideBarMenus />
           </div>
-
+          
           <div className='reelsMenu'>
-            {/* <ReelsMenu /> */}
             <Routes>
-            {/* <Route path='/' element={<ReelsMenu />} /> */}
-            
               <Route path='/stories' element={<ReelsMenu />}>
-              
                 <Route path='/stories/stories' element={<Stories />} /> 
                 <Route path='/stories/reels' element={<Reels />} />
                 <Route path='/stories/rooms' element={<Rooms/>} />
-                
               </Route>
-              {/* <Route path='/accountDetails' element={<AccountDetails/>} /> */}
             </Routes>
-            {/* <YourMind />
-            <Page /> */}
-         <div className='reelsMenus'>
-          <Routes>
-            <Route path='/accountDetails' element={<AccountDetails/>} />
-            <Route path='/videos' element={<Videos/>} />
-            <Route path='/markerplace' element={<MarkerPlace />} />
-            <Route path='/games' element={<Games />} />
-          </Routes>
-      </div>
+            <div>
+              <Routes>
+                <Route path='/accountDetails' element={<AccountDetails/>} />
+                <Route path='/videos' element={<Videos/>} />
+                <Route path='/markerplace' element={<MarkerPlace />} />
+                <Route path='/games' element={<Games />} />
+              </Routes>
+            </div>
+           
+          </div>
+          
+          <div className='messenger-container'>
+              <Messenger />
           </div>
         </div>
       

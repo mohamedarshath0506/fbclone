@@ -201,6 +201,12 @@ nav a.active {
     border-radius: 30px;
 }
 
+.stories-reels-rooms-page video {
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid;
+}
+
 .stories-name {
     position: absolute;
     left: 35px;
@@ -412,8 +418,8 @@ nav a.active {
     /* top: 100px; */
 }
 
-.reelsMenu{
-    width: 40%;
+.reelsMenu {
+    width: 50%;
     float: left;
 }
 
@@ -485,10 +491,10 @@ nav a.active {
     border-radius: 15px;
 }
 
-/* 
-.reelsMenus {
-    width: 58%;
-    float: left;
+
+/* .reelsMenus {
+    padding: 10px;
+    background-color: #fff;
 } */
 
 .create-position {
@@ -508,7 +514,7 @@ nav a.active {
     font-weight: 800;
     gap: 10px;
     color: #fff;
-    background-color: #f8eeee94;
+    background-color:  #f8eeee33;
 }
 
 .camera-position {
@@ -550,4 +556,257 @@ nav a.active {
   
 .tooltips:hover .icons {
     display: block;
+}
+
+.add-friend-request {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    overflow: auto;
+    white-space: nowrap;
+    /* color: #b0a5a5; */
+    background-color: #fff;
+}
+
+.people-you-may {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 0 0;
+    align-items: center;
+}
+
+.add-friend-request p {
+    padding: 0 0 0 10px;
+    color: #b0a5a5;
+}
+
+.seeall-button button {
+    width: 94%;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 12px;
+    border: none;
+    border-radius: 10px;
+    color: #047ae1;
+    background-color: #fff;
+}
+
+.seeall-button button:hover {
+    background-color: #80808024;
+}
+
+.add-friend {
+    height: 315px;
+    background-color: #fff;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.add-request {
+    position: relative;
+    border: 1px solid;
+    margin: 10px;
+}
+
+.cancel-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+}
+.add-request h4 {
+    margin: 8px 0 8px 15px;
+}
+
+.add-friend-btn {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0 0;
+}
+
+.add-friend-btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    width: 200px;
+    padding: 10px 10px;
+    margin: 0;
+    border-radius: 9px;
+    border: none;
+    gap: 15px;
+    color: #047ae1;
+}
+
+.icons-container {
+    position: relative;
+    /* display: inline-block; */
+    margin-right: 15px;
+    z-index: 1;
+}
+  
+.icons-container .icons-content {
+    display: none;
+    width: 325px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 5px;
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+}
+
+.icons-container:hover .icons-content {
+    display: block;
+}
+
+.like-icon {
+    position: relative;
+    /* display: inline-block; */
+    margin-right: 15px;
+    z-index: 1;
+    width: 30px;
+    float: left;
+}
+  
+.like-icon .like-page {
+    display: none;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    color: #fff;
+    background-color: gray;
+}
+
+.like-icon:hover .like-page {
+    display: block;
+}
+
+.account-holder-details {
+    position: relative;
+}
+
+.account-holder-details img {
+    /* width: 25%; */
+    /* float: left; */
+    border-radius: 150px;
+    position: absolute;
+    left: 35px;
+    top: -45px
+}
+
+.account-holder-details h2 {
+    font-size: 25px;
+    max-width: 740px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.add-to-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    height: 120px;
+}
+
+.addto-story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 150px;
+    padding: 7px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    background-color: blue;
+}
+
+.edit-profil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 150px;
+    padding: 7px;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #000
+}
+
+.down {
+    width: 70px;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 7px;
+    border: none;
+    border-radius: 10px;
+}
+
+.section-page {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.section-page p {
+    width: 70px;
+}
+
+.messenger-container {
+    width: 20%;
+    float: left;
+}
+
+.messenger-contacts-container {
+    margin: 5px 15px;
+}
+
+.messenger-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacts-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contacts-details p {
+    margin: 0;
+}
+
+.contacts-messenger {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.menu-contacts-messenger {
+    width: 410px;
+    font-weight: 900;
+    border-radius: 10px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-contacts-messenger:hover {
+    background-color: #80808024;
 }

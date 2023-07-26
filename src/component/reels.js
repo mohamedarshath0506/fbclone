@@ -69,7 +69,6 @@ function Reels() {
                     <img src={laptop} width={200} height={300} />
                     <p className="stories-name">Arshath</p>
                 </div>
-                {/* <h1>Stories</h1> */}
             </div>
         </div>
     )
