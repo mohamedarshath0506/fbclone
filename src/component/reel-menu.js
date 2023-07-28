@@ -3,12 +3,8 @@ import reels from "../image/reels.svg"
 import stories from "../image/stories.svg"
 import video from "../image/video.svg"
 import { Outlet } from "react-router-dom"
-import Stories from "./stories"
-import Reels from "./reels"
-import Rooms from "./rooms"
 import YourMind from "./your-mind"
 import Page from "./page"
-import AccountDetails from "./accound-details"
 
 function ReelsMenu() {
     return(
@@ -32,10 +28,6 @@ function ReelsMenu() {
             <Outlet />
             <YourMind />
             <Page />
-            {/* <AccountDetails /> */}
-            {/* <Stories />
-            <Reels/>
-            <Rooms/> */}
         </div>
     )
 }

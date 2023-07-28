@@ -17,6 +17,12 @@ import wow from "../image/wow.png"
 import haha from "../image/haha.png"
 import sad  from "../image/sad.gif"
 import angry from "../image/angry.png"
+import cameraMan from "../image/camera-man.jpeg"
+import newCamera from "../image/newCamera.jpeg"
+import usingTab from "../image/using-tab.jpeg"
+import mount from "../image/mount.jpeg"
+import roadview from "../image/roadview.jpeg"
+import threeDot from "../image/three-dot.png"
 
 function Page() {
     return(
@@ -25,17 +31,16 @@ function Page() {
                 <div className="post">
                     <div className="profil-post-page">
                         <div className="profil">
-                            <img src={black} width={35} />
+                            <img src={cameraMan} width={30} height={30} />
                             <p>Arshath</p>
                         </div>
-
                         <div className="close-page">
-                            <h1>...</h1>
+                            <img src={threeDot} width={20} />
                             <img src={multiple}width={20} />
                         </div>
                     </div>
                     <div>
-                        <img src={black} width={795} height={500} />
+                        <img src={cameraMan} width={818} height={500} />
                     </div>
                     <hr />
                     <hr />
@@ -83,21 +88,20 @@ function Page() {
                             <p>Share</p>
                         </div>
                     </div>
-                    
                 </div>
                 <div className="post">
                     <div className="profil-post-page">
                         <div className="profil">
-                            <img src={reels} width={35} />
-                            <p>Arshath</p>
+                            <img src={newCamera} width={30} height={30} />
+                            <p>Nusaim</p>
                         </div>
                         <div className="close-page">
-                            <h1>...</h1>
+                            <img src={threeDot} width={20} />
                             <img src={multiple}width={20} />
                         </div>
                     </div>
                     <div>
-                        <img src={reels} width={795} height={500} />
+                        <img src={newCamera} width={818} height={500} />
                     </div>
                     <hr />
                     <hr />
@@ -149,7 +153,7 @@ function Page() {
                 <div className="add-friend-request">
                     <div className="people-you-may">
                         <p>People You May Know</p>
-                        <p>...</p>
+                        <img src={threeDot} width={20} />
                     </div>
                 <div className="add-friend">
                     <div className="add-request" >
@@ -208,16 +212,16 @@ function Page() {
                 <div className="post">
                     <div className="profil-post-page">
                         <div className="profil">
-                            <img src={stories} width={35} />
-                            <p>Arshath</p>
+                            <img src={usingTab} width={30} height={30} />
+                            <p>Afiyal</p>
                         </div>
                         <div className="close-page">
-                            <h1>...</h1>
+                            <img src={threeDot} width={20} />
                             <img src={multiple}width={20} />
                         </div>
                     </div>
                     <div>
-                        <img src={stories} width={795} height={500} />
+                        <img src={usingTab} width={818} height={500} />
                     </div>
                     <hr />
                     <hr />
@@ -266,20 +270,19 @@ function Page() {
                         </div>
                     </div>
                 </div>
-
                 <div className="post">
                     <div className="profil-post-page">
                         <div className="profil">
-                            <img src={photosvideos} width={35} />
-                            <p>Arshath</p>
+                            <img src={mount} width={30} height={30} />
+                            <p>Lameen</p>
                         </div>
                         <div className="close-page">
-                            <h1>...</h1>
+                            <img src={threeDot} width={20} />
                             <img src={multiple}width={20} />
                         </div>
                     </div>
                     <div>
-                        <img src={photosvideos} width={795} height={500} />
+                        <img src={mount} width={818} height={500} />
                     </div>
                     <hr />
                     <hr />
@@ -328,20 +331,19 @@ function Page() {
                         </div>
                     </div>
                 </div>
-
                 <div className="post">
                     <div className="profil-post-page">
                         <div className="profil">
-                            <img src={video} width={35} />
-                            <p>Arshath</p>
+                            <img src={roadview} width={30} height={30} />
+                            <p>Afiyath</p>
                         </div>
                         <div className="close-page">
-                            <h1>...</h1>
+                            <img src={threeDot} width={20} />
                             <img src={multiple}width={20} />
                         </div>
                     </div>
                     <div>
-                        <img src={video} width={795} height={500} />
+                        <img src={roadview} width={818} height={500} />
                     </div>
                      <hr />
                     <hr />
@@ -349,48 +351,48 @@ function Page() {
                         <div className="content like-content icons-container">
                             <img src={like} width={30} />
                             <p>Like</p>
-                            <div className="icons-content">
-                                <div className="like-icon">
-                                    <p className="like-page">like</p>
-                                    <img src={likes} width={40}  />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">love</p>
+                        <div className="icons-content">
+                            <div className="like-icon">
+                                <p className="like-page">like</p>
+                                <img src={likes} width={40}  />
+                            </div>
+                            <div className="like-icon">
+                                <p className="like-page">love</p>
                                 <img src={love} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">card</p>
+                            </div>
+                            <div className="like-icon">
+                                <p className="like-page">card</p>
                                 <img src={care} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">haha</p>
+                            </div>
+                            <div className="like-icon">
+                                <p className="like-page">haha</p>
                                 <img src={haha} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">wow</p>
+                            </div>
+                            <div className="like-icon">
+                                <p className="like-page">wow</p>
                                 <img src={wow} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">sad</p>
+                            </div>
+                            <div className="like-icon">
+                                <p className="like-page">sad</p>
                                 <img src={sad} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">angry</p>
+                            </div>
+                            <div className="like-icon">
+                                <p className="like-page">angry</p>
                                 <img src={angry} width={40} />
-                                </div>
                             </div>
                         </div>
-                        <div className="content comment-content">
-                            <img src={comment} width={30} />
-                            <p>Comment</p>
-                        </div>
-                        <div className="content share-content">
-                            <img src={share} width={30}/>
-                            <p>Share</p>
-                        </div>
+                    </div>
+                    <div className="content comment-content">
+                        <img src={comment} width={30} />
+                        <p>Comment</p>
+                    </div>
+                    <div className="content share-content">
+                        <img src={share} width={30}/>
+                        <p>Share</p>
                     </div>
                 </div>
             </div>
+        </div>
     </div>
     )
 }

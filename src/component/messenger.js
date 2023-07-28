@@ -21,22 +21,18 @@ function Messenger() {
                 <img src={likes} width={20} />
                 <p>Arshath</p>
             </div>
-
             <div className="contacts-messenger menu-contacts-messenger">
                 <img src={addfriend} width={20} />
                 <p>Nusaim</p>
             </div>
-
             <div className="contacts-messenger menu-contacts-messenger">
                 <img src={accountdp} width={20} />
                 <p>Afiyal</p>
             </div>
-
             <div className="contacts-messenger menu-contacts-messenger">
                 <img src={bell} width={20} />
                 <p>Afiyath</p>
             </div>
-
             <div className="contacts-messenger menu-contacts-messenger">
                 <img src={home} width={20} />
                 <p>Lameen</p>

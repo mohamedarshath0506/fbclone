@@ -5,9 +5,25 @@ import black from "../image/black.jpg"
 import down from "../image/down.png"
 import add from "../image/add.png"
 import edit from "../image/edit.png"
+import MyAccount from "./my-account"
+import { NavLink } from "react-router-dom"
+import { Outlet } from "react-router-dom"
+import PostsPage from "./posts-page"
+import About from "./about"
 
 function AccountDetails() {
+
+    // const styles = {
+    //     sideMenuBar: {
+    //         display: "none",
+    //     }
+    // }
+
     return(
+        <div>
+            {/* <div className='my' >
+                <MyAccount />
+            </div> */}
         <div className="account-details-container">
             <div className="account-container">
                 <img src={accountdp} width={1350} height={500}/>
@@ -16,8 +32,7 @@ function AccountDetails() {
                 </div>
                 <div className="camera-position">
                     <p className="create-with-avatar"><img src={camera} width={30} />EditCover Photo</p>
-                </div>
-                
+                </div> 
             </div>
             <div>
                 <div className="account-holder-details">
@@ -32,16 +47,22 @@ function AccountDetails() {
             </div>
             <hr/>
             <div>
+                <nav>
                 <div className="section-page">
-                    <p>Posts</p>
-                    <p>About</p>
-                    <p>Friends</p>
-                    <p>Photos</p>
-                    <p>Videos</p>
-                    <p>Reels</p>
-                    <p>More</p>
+                    <NavLink to="/accountDetails/postPage" className="select ">Posts</NavLink>
+                    <NavLink to="/accountDetails/about" className="select">About</NavLink>
+                    <p className="select">Friends</p>
+                    <p className="select">Photos</p>
+                    <p className="select">Videos</p>
+                    <p className="select">Reels</p>
+                    <p className="select">More</p>
                 </div>
+                </nav>
             </div>
+        </div>
+        <Outlet />
+        {/* <PostsPage />
+        <About /> */}
         </div>
     )
 }
