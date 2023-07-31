@@ -9,7 +9,7 @@ import threeDot from "../image/three-dot.png"
 
 function WorkAndEducation() {
     return (
-        <div className="school-first-container">
+        <div className="school-first-container addwork-container">
             <div className="school-content">
                 <h3>Work</h3>
                 <div className="school-are-college-place">

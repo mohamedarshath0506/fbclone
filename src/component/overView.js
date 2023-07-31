@@ -14,7 +14,7 @@ import lock from "../image/lock.png"
 function OverView() {
     return (
         <div>
-                {/* <div className="addwork-container"> */}
+                <div className="addwork-container">
                     <div className="add-work-content">
                         <img src={addWork} width={40} />
                         <p>Add a workplace</p>
@@ -91,7 +91,7 @@ function OverView() {
                             <img src={edit} width={30} className="dot-icon" />
                         </div>
                     </div>
-                 {/* </div> */}
+                 </div>
                 </div>
     )
 }

@@ -17,7 +17,12 @@ import Home from './component/home';
 import PostsPage from './component/posts-page';
 import About from './component/about';
 import OverView from './component/overView';
-
+import WorkAndEducation from './component/work-and-education';
+import PlacesLived from './component/places-lived';
+import ContactInfo from './component/contact-info';
+import Relationship from './component/relationship';
+import AboutYou from './component/about-you';
+import LifeEvent from './component/life-event';
 
 function App() {
   return (
@@ -37,7 +42,13 @@ function App() {
               <Route path='/accountDetails' element={<AccountDetails />} >
                 <Route path='/accountDetails/postPage' element={<PostsPage />} />
                   <Route path="/accountDetails/about" element={<About />} />
-                    {/* <Route path='/accountDetails/about/addWorkPlace' element={<OverView  />} /> */}
+                    <Route path='/accountDetails/about/addWorkPlace' element={<OverView  />} />
+                    <Route path='/accountDetails/about/workAndEducation' element={<WorkAndEducation />} />
+                    <Route path='/accountDetails/about/placesLived' element={<PlacesLived />} />
+                    <Route path='/accountDetails/about/contactInfo' element={<ContactInfo />} />
+                    <Route path='/accountDetails/about/relationship' element={<Relationship />} />
+                    <Route path='/accountDetails/about/aboutYou' element={<AboutYou />} />
+                    <Route path='/accountDetails/about/lifeEvent' element={<LifeEvent />} /> 
                   </Route>
              
                 <Route path='/videos' element={<Videos/>} />

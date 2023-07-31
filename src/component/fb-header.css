@@ -951,8 +951,8 @@ nav select.active {
 
 .about-container {
     display: flex;
-    justify-content: left;
-    align-items: self-start;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin: 20px 0;
     border-radius: 10px;
@@ -966,9 +966,17 @@ nav select.active {
     align-items: center;
     flex-direction: column;
     padding: 10px 0 55px 0;
+    /* background-color: #fff; */
 }
 
-.about-content-btn p {
+.abc {
+    width: 73%;
+    padding: 0 25px;
+    margin: 20px 0;
+    /* background-color: #fff; */
+}
+
+/* .about-content-btn p {
     width: 85%;
     font-size: 15px;
     font-weight: 600;
@@ -979,14 +987,30 @@ nav select.active {
     border-radius: 5px;
     color: #7A7C7F;
     background-color: #fff;
+} */
+
+
+/* .about-content-btn p:hover {
+    background-color: #80808024;
+} */
+
+.about-header-title {
+    width: 85%;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 0 10px 10px;
+    margin: 0 0 10px 0;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #7A7C7F;
+    background-color: #fff;
 }
 
-
-.about-content-btn p:hover {
-    /* color: #1777F2; */
+.about-header-title:hover {
     background-color: #80808024;
 }
-
 
 .about-header {
     width: 100%;
@@ -998,9 +1022,9 @@ nav select.active {
     margin: 0;
 }
 
-.addwork-container {
+/* .addwork-container {
     width: 70%;
-}
+} */
 
 .add-work-content {
     display: flex;
@@ -1111,4 +1135,8 @@ nav select.active {
 
 .school-name-content p {
     margin: 0;
+}
+
+.ab {
+    width: 70%;
 }
