@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Route, Routes } from 'react-router';
 import FbHeader from './component/fb-header';
@@ -11,9 +10,6 @@ import AccountDetails from './component/accound-details';
 import Videos from './component/videos';
 import MarkerPlace from './component/marker-place';
 import Games from './component/games';
-import Messenger from './component/messenger';
-import MyAccount from './component/my-account';
-import Home from './component/home';
 import PostsPage from './component/posts-page';
 import About from './component/about';
 import OverView from './component/overView';

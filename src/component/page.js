@@ -1,15 +1,7 @@
-import reels from "../image/reels.svg"
-import stories from "../image/stories.svg"
-import video from "../image/video.svg"
-import photosvideos from "../image/photosvideos.png"
-import black from "../image/black.jpg"
 import like from "../image/like.png"
 import comment from "../image/comment.png"
 import share from "../image/share.png"
 import multiple from "../image/multiple.png"
-import photo from "../image/photo-1522770179533-24471fcdba45.jpeg"
-import addfriend from "../image/add-friend.png"
-import cancel from "../image/cancel.png"
 import likes from "../image/like.gif"
 import love from "../image/love.gif"
 import care from "../image/care.gif"
@@ -18,382 +10,93 @@ import haha from "../image/haha.png"
 import sad  from "../image/sad.gif"
 import angry from "../image/angry.png"
 import cameraMan from "../image/camera-man.jpeg"
-import newCamera from "../image/newCamera.jpeg"
-import usingTab from "../image/using-tab.jpeg"
-import mount from "../image/mount.jpeg"
-import roadview from "../image/roadview.jpeg"
 import threeDot from "../image/three-dot.png"
+import { useState, useEffect } from "react"
+import axios from "axios"
 
 function Page() {
+
+    const [post, setPost] = useState(null)
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get('http://localhost:3003/post')
+                setPost(response.data)
+            }catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+        fetchData()
+    }, [])
     return(
         <div className="hover-container">
             <div className="post-page">
-                <div className="post">
-                    <div className="profil-post-page">
-                        <div className="profil">
-                            <img src={cameraMan} width={30} height={30} />
-                            <p>Arshath</p>
-                        </div>
-                        <div className="close-page">
-                            <img src={threeDot} width={20} />
-                            <img src={multiple}width={20} />
-                        </div>
-                    </div>
-                    <div>
-                        <img src={cameraMan} width={818} height={500} />
-                    </div>
-                    <hr />
-                    <hr />
-                    <div className="like-comment-share-btn">
-                        <div className="content like-content icons-container">
-                            <img src={like} width={30} />
-                            <p>Like</p> 
-                            <div className="icons-content">
-                                <div className="like-icon">
-                                    <p className="like-page">like</p>
-                                    <img src={likes} width={40}  />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">love</p>
-                                <img src={love} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">card</p>
-                                <img src={care} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">haha</p>
-                                <img src={haha} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">wow</p>
-                                <img src={wow} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">sad</p>
-                                <img src={sad} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">angry</p>
-                                <img src={angry} width={40} />
-                                </div>
+                {post?.map((post) => (
+                    <div className="post">
+                
+                        <div className="profil-post-page">
+                            <div className="profil">
+                                <img src={cameraMan} width={30} height={30} />
+                                <p>Arshath</p>
+                            </div>
+                            <div className="close-page">
+                                <img src={threeDot} width={20} />
+                                <img src={multiple}width={20} />
                             </div>
                         </div>
-                        <div className="content comment-content">
-                            <img src={comment} width={30} />
-                            <p>Comment</p>
-                        </div>
-                        <div className="content share-content">
-                            <img src={share} width={30}/>
-                            <p>Share</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="post">
-                    <div className="profil-post-page">
-                        <div className="profil">
-                            <img src={newCamera} width={30} height={30} />
-                            <p>Nusaim</p>
-                        </div>
-                        <div className="close-page">
-                            <img src={threeDot} width={20} />
-                            <img src={multiple}width={20} />
-                        </div>
-                    </div>
-                    <div>
-                        <img src={newCamera} width={818} height={500} />
-                    </div>
-                    <hr />
-                    <hr />
-                    <div className="like-comment-share-btn">
-                        <div className="content like-content icons-container">
-                            <img src={like} width={30} />
-                            <p>Like</p>
-                            <div className="icons-content">
-                                <div className="like-icon">
-                                    <p className="like-page">like</p>
-                                    <img src={likes} width={40}  />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">love</p>
-                                <img src={love} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">card</p>
-                                <img src={care} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">haha</p>
-                                <img src={haha} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">wow</p>
-                                <img src={wow} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">sad</p>
-                                <img src={sad} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">angry</p>
-                                <img src={angry} width={40} />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="content comment-content">
-                            <img src={comment} width={30} />
-                            <p>Comment</p>
-                        </div>
-                        <div className="content share-content">
-                            <img src={share} width={30}/>
-                            <p>Share</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="add-friend-request">
-                    <div className="people-you-may">
-                        <p>People You May Know</p>
-                        <img src={threeDot} width={20} />
-                    </div>
-                <div className="add-friend">
-                    <div className="add-request" >
-                        <div className="cancel-btn">
-                            <img src={cancel}width={30} />
-                        </div>
-                            <img src={photo} width={230} />
                         <div>
-                            <h4>Arshath</h4>
-                            <div className="add-friend-btn">
-                                <button><img src={addfriend} width={20} />Add Friend</button>
+                            <img src={post.img} width={818} height={500} />
+                        </div>
+                        <hr />
+                        <hr />
+                        <div className="like-comment-share-btn">
+                            <div className="content like-content icons-container">
+                                <img src={like} width={30} />
+                                <p>Like</p> 
+                                <div className="icons-content">
+                                    <div className="like-icon">
+                                        <p className="like-page">like</p>
+                                        <img src={likes} width={40}  />
+                                    </div>
+                                    <div className="like-icon">
+                                        <p className="like-page">love</p>
+                                    <img src={love} width={40} />
+                                    </div>
+                                    <div className="like-icon">
+                                        <p className="like-page">card</p>
+                                    <img src={care} width={40} />
+                                    </div>
+                                    <div className="like-icon">
+                                        <p className="like-page">haha</p>
+                                    <img src={haha} width={40} />
+                                    </div>
+                                    <div className="like-icon">
+                                        <p className="like-page">wow</p>
+                                    <img src={wow} width={40} />
+                                    </div>
+                                    <div className="like-icon">
+                                        <p className="like-page">sad</p>
+                                    <img src={sad} width={40} />
+                                    </div>
+                                    <div className="like-icon">
+                                        <p className="like-page">angry</p>
+                                    <img src={angry} width={40} />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="content comment-content">
+                                <img src={comment} width={30} />
+                                <p>Comment</p>
+                            </div>
+                            <div className="content share-content">
+                                <img src={share} width={30}/>
+                                <p>Share</p>
                             </div>
                         </div>
                     </div>
-                    <div className="add-request" >
-                        <div className="cancel-btn">
-                            <img src={cancel}width={30} />
-                        </div>
-                        <img src={photo} width={230} />
-                        <div>
-                            <h4>Arshath</h4>
-                            <div className="add-friend-btn">
-                                <button><img src={addfriend} width={20} />Add Friend</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="add-request" >
-                        <div className="cancel-btn">
-                            <img src={cancel}width={30} />
-                        </div>
-                            <img src={photo} width={230} />
-                        <div>
-                            <h4>Arshath</h4>
-                            <div className="add-friend-btn">
-                                <button><img src={addfriend} width={20} />Add Friend</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="add-request" >
-                        <div className="cancel-btn">
-                            <img src={cancel}width={30} />
-                        </div>
-                            <img src={photo} width={230} />
-                        <div>
-                            <h4>Arshath</h4>
-                            <div className="add-friend-btn ">
-                                <button><img src={addfriend} width={20} />Add Friend</button>
-                            </div>
-                        </div>
-                    </div>   
-                </div>
-                    <div className="seeall-button">
-                        <button>See all</button>
-                    </div>
-                </div>
-                <div className="post">
-                    <div className="profil-post-page">
-                        <div className="profil">
-                            <img src={usingTab} width={30} height={30} />
-                            <p>Afiyal</p>
-                        </div>
-                        <div className="close-page">
-                            <img src={threeDot} width={20} />
-                            <img src={multiple}width={20} />
-                        </div>
-                    </div>
-                    <div>
-                        <img src={usingTab} width={818} height={500} />
-                    </div>
-                    <hr />
-                    <hr />
-                    <div className="like-comment-share-btn">
-                        <div className="content like-content icons-container">
-                            <img src={like} width={30} />
-                            <p>Like</p>
-                            <div className="icons-content">
-                                <div className="like-icon">
-                                    <p className="like-page">like</p>
-                                    <img src={likes} width={40}  />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">love</p>
-                                <img src={love} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">card</p>
-                                <img src={care} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">haha</p>
-                                <img src={haha} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">wow</p>
-                                <img src={wow} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">sad</p>
-                                <img src={sad} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">angry</p>
-                                <img src={angry} width={40} />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="content comment-content">
-                            <img src={comment} width={30} />
-                            <p>Comment</p>
-                        </div>
-                        <div className="content share-content">
-                            <img src={share} width={30}/>
-                            <p>Share</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="post">
-                    <div className="profil-post-page">
-                        <div className="profil">
-                            <img src={mount} width={30} height={30} />
-                            <p>Lameen</p>
-                        </div>
-                        <div className="close-page">
-                            <img src={threeDot} width={20} />
-                            <img src={multiple}width={20} />
-                        </div>
-                    </div>
-                    <div>
-                        <img src={mount} width={818} height={500} />
-                    </div>
-                    <hr />
-                    <hr />
-                    <div className="like-comment-share-btn">
-                        <div className="content like-content icons-container">
-                            <img src={like} width={30} />
-                            <p>Like</p>
-                            <div className="icons-content">
-                                <div className="like-icon">
-                                    <p className="like-page">like</p>
-                                    <img src={likes} width={40}  />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">love</p>
-                                <img src={love} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">card</p>
-                                <img src={care} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">haha</p>
-                                <img src={haha} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">wow</p>
-                                <img src={wow} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">sad</p>
-                                <img src={sad} width={40} />
-                                </div>
-                                <div className="like-icon">
-                                    <p className="like-page">angry</p>
-                                <img src={angry} width={40} />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="content comment-content">
-                            <img src={comment} width={30} />
-                            <p>Comment</p>
-                        </div>
-                        <div className="content share-content">
-                            <img src={share} width={30}/>
-                            <p>Share</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="post">
-                    <div className="profil-post-page">
-                        <div className="profil">
-                            <img src={roadview} width={30} height={30} />
-                            <p>Afiyath</p>
-                        </div>
-                        <div className="close-page">
-                            <img src={threeDot} width={20} />
-                            <img src={multiple}width={20} />
-                        </div>
-                    </div>
-                    <div>
-                        <img src={roadview} width={818} height={500} />
-                    </div>
-                     <hr />
-                    <hr />
-                    <div className="like-comment-share-btn">
-                        <div className="content like-content icons-container">
-                            <img src={like} width={30} />
-                            <p>Like</p>
-                        <div className="icons-content">
-                            <div className="like-icon">
-                                <p className="like-page">like</p>
-                                <img src={likes} width={40}  />
-                            </div>
-                            <div className="like-icon">
-                                <p className="like-page">love</p>
-                                <img src={love} width={40} />
-                            </div>
-                            <div className="like-icon">
-                                <p className="like-page">card</p>
-                                <img src={care} width={40} />
-                            </div>
-                            <div className="like-icon">
-                                <p className="like-page">haha</p>
-                                <img src={haha} width={40} />
-                            </div>
-                            <div className="like-icon">
-                                <p className="like-page">wow</p>
-                                <img src={wow} width={40} />
-                            </div>
-                            <div className="like-icon">
-                                <p className="like-page">sad</p>
-                                <img src={sad} width={40} />
-                            </div>
-                            <div className="like-icon">
-                                <p className="like-page">angry</p>
-                                <img src={angry} width={40} />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="content comment-content">
-                        <img src={comment} width={30} />
-                        <p>Comment</p>
-                    </div>
-                    <div className="content share-content">
-                        <img src={share} width={30}/>
-                        <p>Share</p>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
-    </div>
     )
 }
 

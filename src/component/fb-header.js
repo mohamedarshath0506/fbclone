@@ -5,7 +5,8 @@ import search from "../image/search.png"
 import black from "../image/black.jpg"
 
 function FbHeader() {
-    return(
+
+    return (
         <div className="fb-clone-container">
             <div className="container">
                 <div className="header">
@@ -17,15 +18,16 @@ function FbHeader() {
                 </div>
                 <div className="fb-icons">
                     <div className="tooltip">
-                        <img src={message} width={20} className="fb-icon-img" />
+                        <img src={message} width={31} className="fb-icon-img" /> 
                         <p className="tooltiptext">messenger</p>
                     </div>
                     <div className="tooltip">
-                        <img src={bell} width={20} className="fb-icon-img" />
+                        <img src={bell} width={31} className="fb-icon-img" />
                         <p className="tooltiptext">Notifications</p>
                     </div>
                     <div className="tooltip">
-                        <img src={black} width={35} className="fb-icon-account-holder" />
+                        
+                        <img src={black} width={45} className="fb-icon-account-holder" />
                         <p className="tooltiptext">Account</p>
                     </div>
                 </div>
