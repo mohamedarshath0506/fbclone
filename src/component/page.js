@@ -2,17 +2,11 @@ import like from "../image/like.png"
 import comment from "../image/comment.png"
 import share from "../image/share.png"
 import multiple from "../image/multiple.png"
-import likes from "../image/like.gif"
-import love from "../image/love.gif"
-import care from "../image/care.gif"
-import wow from "../image/wow.png"
-import haha from "../image/haha.png"
-import sad  from "../image/sad.gif"
-import angry from "../image/angry.png"
 import cameraMan from "../image/camera-man.jpeg"
 import threeDot from "../image/three-dot.png"
 import { useState, useEffect } from "react"
 import axios from "axios"
+import Icons from "./icons"
 
 function Page() {
 
@@ -37,7 +31,7 @@ function Page() {
                         <div className="profil-post-page">
                             <div className="profil">
                                 <img src={cameraMan} width={30} height={30} />
-                                <p>Arshath</p>
+                                <p>{post.name}</p>
                             </div>
                             <div className="close-page">
                                 <img src={threeDot} width={20} />
@@ -53,36 +47,7 @@ function Page() {
                             <div className="content like-content icons-container">
                                 <img src={like} width={30} />
                                 <p>Like</p> 
-                                <div className="icons-content">
-                                    <div className="like-icon">
-                                        <p className="like-page">like</p>
-                                        <img src={likes} width={40}  />
-                                    </div>
-                                    <div className="like-icon">
-                                        <p className="like-page">love</p>
-                                    <img src={love} width={40} />
-                                    </div>
-                                    <div className="like-icon">
-                                        <p className="like-page">card</p>
-                                    <img src={care} width={40} />
-                                    </div>
-                                    <div className="like-icon">
-                                        <p className="like-page">haha</p>
-                                    <img src={haha} width={40} />
-                                    </div>
-                                    <div className="like-icon">
-                                        <p className="like-page">wow</p>
-                                    <img src={wow} width={40} />
-                                    </div>
-                                    <div className="like-icon">
-                                        <p className="like-page">sad</p>
-                                    <img src={sad} width={40} />
-                                    </div>
-                                    <div className="like-icon">
-                                        <p className="like-page">angry</p>
-                                    <img src={angry} width={40} />
-                                    </div>
-                                </div>
+                                <Icons />
                             </div>
                             <div className="content comment-content">
                                 <img src={comment} width={30} />

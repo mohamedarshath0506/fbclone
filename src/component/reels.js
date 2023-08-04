@@ -24,7 +24,7 @@ function Reels() {
                         <img src={reel.img} width={20} height={20} />
                     </div>
                     <img src={reel.img} width={200} height={300} />
-                    <p className="stories-name">Arshath</p>
+                    <p className="stories-name">{reel.name}</p>
                 </div>
                 ))}
             </div>

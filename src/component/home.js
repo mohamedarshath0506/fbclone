@@ -17,19 +17,19 @@ function Home() {
             <SideBarMenus />
         
           </div>
-        <div className='reelsMenu'>
-            <Routes>
-              <Route path='/stories' element={<ReelsMenu />}>
-                <Route path='/stories/stories' element={<Stories />} /> 
-                <Route path='/stories/reels' element={<Reels />} />
-                <Route path='/stories/rooms' element={<Rooms/>} />
-              </Route>
-                <Route path='/accountDetails' element={<AccountDetails/>} />
-                <Route path='/videos' element={<Videos/>} />
-                <Route path='/markerplace' element={<MarkerPlace />} />
-                <Route path='/games' element={<Games />} />
-            </Routes>
-        </div>
+          <div className='reelsMenu'>
+              <Routes>
+                <Route path='/stories' element={<ReelsMenu />}>
+                  <Route path='/stories/stories' element={<Stories />} /> 
+                  <Route path='/stories/reels' element={<Reels />} />
+                  <Route path='/stories/rooms' element={<Rooms/>} />
+                </Route>
+                  <Route path='/accountDetails' element={<AccountDetails/>} />
+                  <Route path='/videos' element={<Videos/>} />
+                  <Route path='/markerplace' element={<MarkerPlace />} />
+                  <Route path='/games' element={<Games />} />
+              </Routes>
+          </div>
         </div>
     )
 }

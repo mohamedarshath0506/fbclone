@@ -3,7 +3,6 @@ import OverView from "./overView"
 
 function About() {
     return (
-      
             <div className="about-container">
                 <div className="about-content-btn">
                     <div className="about-header">

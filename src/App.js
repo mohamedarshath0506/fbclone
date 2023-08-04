@@ -19,6 +19,7 @@ import ContactInfo from './component/contact-info';
 import Relationship from './component/relationship';
 import AboutYou from './component/about-you';
 import LifeEvent from './component/life-event';
+import Page from './component/page';
 
 function App() {
   return (
@@ -51,8 +52,9 @@ function App() {
                 <Route path='/markerplace' element={<MarkerPlace />} />
                 <Route path='/games' element={<Games />} />
 
-
+               
              </Routes>
+             {/* <Page /> */}
           </div>
           <div className='messenger-container'>
           </div>
