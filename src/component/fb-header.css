@@ -598,7 +598,7 @@ nav a.active {
     padding: 5px;
     position: absolute;
     background-color: #fff;
-    top: 0;
+    top: -45px;
 }
 
 .icons-container:hover .icons-content {
@@ -617,7 +617,8 @@ nav a.active {
     display: none;
     padding: 5px;
     position: absolute;
-    top: 0;
+    top: 20px;
+    border-radius: 15px;
     color: #fff;
     background-color: gray;
 }
@@ -1139,4 +1140,11 @@ nav select.active {
 
 .ab {
     width: 70%;
+}
+
+.comment-content input {
+    width: 400px;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
 }

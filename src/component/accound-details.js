@@ -5,12 +5,8 @@ import black from "../image/black.jpg"
 import down from "../image/down.png"
 import add from "../image/add.png"
 import edit from "../image/edit.png"
-import MyAccount from "./my-account"
 import { NavLink } from "react-router-dom"
 import { Outlet } from "react-router-dom"
-import PostsPage from "./posts-page"
-import About from "./about"
-
 function AccountDetails() {
 
     return (

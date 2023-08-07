@@ -19,42 +19,40 @@ import ContactInfo from './component/contact-info';
 import Relationship from './component/relationship';
 import AboutYou from './component/about-you';
 import LifeEvent from './component/life-event';
-import Page from './component/page';
 
 function App() {
   return (
     <div className="App">
       <FbHeader />
-        <div className='section-container'>
-          <div className='sideMenu'>
-            <SideBarMenus />
-          </div>
-          <div className='reelsMenu'>
-            <Routes>
-              <Route path='/stories' element={<ReelsMenu />}>
-                <Route path='/stories/stories' element={<Stories />} /> 
-                <Route path='/stories/reels' element={<Reels />} />
-                <Route path='/stories/rooms' element={<Rooms/>} />
-              </Route>
-              <Route path='/accountDetails' element={<AccountDetails />} >
-                <Route path='/accountDetails/postPage' element={<PostsPage />} />
-                  <Route path="/accountDetails/about" element={<About />} />
-                    <Route path='/accountDetails/about/addWorkPlace' element={<OverView  />} />
-                    <Route path='/accountDetails/about/workAndEducation' element={<WorkAndEducation />} />
-                    <Route path='/accountDetails/about/placesLived' element={<PlacesLived />} />
-                    <Route path='/accountDetails/about/contactInfo' element={<ContactInfo />} />
-                    <Route path='/accountDetails/about/relationship' element={<Relationship />} />
-                    <Route path='/accountDetails/about/aboutYou' element={<AboutYou />} />
-                    <Route path='/accountDetails/about/lifeEvent' element={<LifeEvent />} /> 
-                  </Route>
-             
-                <Route path='/videos' element={<Videos/>} />
-                <Route path='/markerplace' element={<MarkerPlace />} />
-                <Route path='/games' element={<Games />} />
+          <div className='section-container'>
+          `<div className='sideMenu'>
+              <SideBarMenus />
+            </div>
+            <div className='reelsMenu'>
+              <Routes>
+                <Route path='/stories' element={<ReelsMenu />}>
+                  <Route path='/stories/stories' element={<Stories />} /> 
+                  <Route path='/stories/reels' element={<Reels />} />
+                  <Route path='/stories/rooms' element={<Rooms/>} />
+                </Route>
+                <Route path='/accountDetails' element={<AccountDetails />} >
+                  <Route path='/accountDetails/postPage' element={<PostsPage />} />
+                    <Route path="/accountDetails/about" element={<About />} />
+                      <Route path='/accountDetails/about/addWorkPlace' element={<OverView  />} />
+                      <Route path='/accountDetails/about/workAndEducation' element={<WorkAndEducation />} />
+                      <Route path='/accountDetails/about/placesLived' element={<PlacesLived />} />
+                      <Route path='/accountDetails/about/contactInfo' element={<ContactInfo />} />
+                      <Route path='/accountDetails/about/relationship' element={<Relationship />} />
+                      <Route path='/accountDetails/about/aboutYou' element={<AboutYou />} />
+                      <Route path='/accountDetails/about/lifeEvent' element={<LifeEvent />} /> 
+                    </Route>
+              
+                  <Route path='/videos' element={<Videos/>} />
+                  <Route path='/markerplace' element={<MarkerPlace />} />
+                  <Route path='/games' element={<Games />} />
 
-               
-             </Routes>
-             {/* <Page /> */}
+                
+              </Routes>
           </div>
           <div className='messenger-container'>
           </div>

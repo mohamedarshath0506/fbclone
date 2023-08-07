@@ -12,10 +12,8 @@ import SideBarMenus from './side-bar-menus';
 function Home() {
     return (
         <div className='section-container'>
-
           <div className='sideMenu'>
             <SideBarMenus />
-        
           </div>
           <div className='reelsMenu'>
               <Routes>

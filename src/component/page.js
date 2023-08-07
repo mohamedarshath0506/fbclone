@@ -49,7 +49,7 @@ function Page() {
                                 <p>Like</p> 
                                 <Icons />
                             </div>
-                            <div className="content comment-content">
+                            <div className="content comment-content ">
                                 <img src={comment} width={30} />
                                 <p>Comment</p>
                             </div>
