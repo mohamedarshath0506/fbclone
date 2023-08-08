@@ -1148,3 +1148,121 @@ nav select.active {
     border-radius: 7px;
     border: none;
 }
+
+.friend-requests {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 100%;
+    margin: 20px 0;
+    padding: 5px 0 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.friend-requests-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.friend-requests-content {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 460px;
+    border: 1px solid;
+    margin: 10px 0 0;
+    text-align: left;
+    padding: 10px 20px;
+    border-radius: 14px;
+    background-color: #fff;
+}
+
+.friends img {
+    border-radius: 10px
+}
+
+.friends-name {
+    margin-left: 10px;
+}
+
+.friends-name h3 {
+    font-size: 17px;
+    margin: 0;
+}
+
+.friends-name p {
+    font-size: 13px;
+    margin: 0;
+    color: #D6CAB2;
+}
+
+.find-friend {
+    display: flex;
+}
+.find-friend  h3 {
+    width: 40%;
+    float: left;
+    text-align: left;
+    margin: 20px 0 0 20px;
+}
+
+.find-friend input {
+    width: 165px;
+    float: left;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 7px 6px 9px;
+    border-radius: 10px;
+    background-color: #F0F2F5;
+    border: none;
+}
+
+.find-friend h5 {
+    float: left;
+    width: 12%;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0 0 10px;
+    border-radius: 10px;
+    color: #385898;
+}
+
+.find-friend h5:hover {
+    background-color: #80808012;
+}
+
+.all-friend-requests {
+    display: flex;
+    gap: 35px;
+    padding: 0 25px;
+}
+
+.allFriends {
+    font-size: 15px;
+    font-weight: 600;
+    float: left;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #808080e3;
+}
+
+.allFriends:hover {
+    /* border-bottom: 5px solid; */
+    /* color: #338DF9; */
+    background-color: #80808024;
+}
+
+.three-dot-friend {
+    width: 14%;
+    margin: 10px 0 0 0;
+}
+
+.friend-dot-icon {
+    padding: 5px 10px;
+    background-color: #E4E6EB;
+    /* border-radius: 30px; */
+}

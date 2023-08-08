@@ -7,6 +7,7 @@ import add from "../image/add.png"
 import edit from "../image/edit.png"
 import { NavLink } from "react-router-dom"
 import { Outlet } from "react-router-dom"
+
 function AccountDetails() {
 
     return (
@@ -36,9 +37,9 @@ function AccountDetails() {
                 <div>
                     <nav>
                     <div className="section-page">
-                        <NavLink to="/accountDetails/postPage" className="select ">Posts</NavLink>
+                        <NavLink to="/accountDetails/postPage" className="select">Posts</NavLink>
                         <NavLink to="/accountDetails/about" className="select">About</NavLink>
-                        <p className="select">Friends</p>
+                        <NavLink to="/accountDetails/friends" className="select">Friends</NavLink>
                         <p className="select">Photos</p>
                         <p className="select">Videos</p>
                         <p className="select">Reels</p>

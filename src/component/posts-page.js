@@ -116,9 +116,7 @@ function PostsPage() {
                             <img src={multiple}width={20} />
                         </div>
                     </div>
-                    <div>
-                         {/* <img src={photosvideos} width={795} height={500} /> */}
-                    </div>
+                   
                     <hr />
                     <hr />
                     <div className="like-comment-share-btn">

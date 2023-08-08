@@ -3,18 +3,22 @@ import axios from "axios";
 
 function Stories() {
 
-    const [stories, setStories] = useState(null)
-    useEffect(() => {
-        const fetchData = async () => {
-          try {
-            const response = await axios.get('http://localhost:3003/stories');
-            setStories(response.data);
-          } catch (error) {
-            console.error('Error fetching data:', error);
-          }
-        };
-        fetchData();
-      }, []);
+  const [stories, setStories] = useState(null)
+  useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const response = await axios.get('http://localhost:3002/stories');
+          setStories(response.data)
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        }
+      };
+      fetchData();
+    }, []);
+
+
+console.log('stories', stories)
+    
     return (
         <div className="stories-reels-rooms-page">
             {stories?.map((storie) => (

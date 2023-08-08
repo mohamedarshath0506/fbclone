@@ -19,13 +19,19 @@ import ContactInfo from './component/contact-info';
 import Relationship from './component/relationship';
 import AboutYou from './component/about-you';
 import LifeEvent from './component/life-event';
+import Friends from './component/friends';
+import AllFriends from './component/allFriends';
 
 function App() {
+
+  
+
+
   return (
     <div className="App">
       <FbHeader />
           <div className='section-container'>
-          `<div className='sideMenu'>
+          <div className='sideMenu'>
               <SideBarMenus />
             </div>
             <div className='reelsMenu'>
@@ -38,20 +44,19 @@ function App() {
                 <Route path='/accountDetails' element={<AccountDetails />} >
                   <Route path='/accountDetails/postPage' element={<PostsPage />} />
                     <Route path="/accountDetails/about" element={<About />} />
-                      <Route path='/accountDetails/about/addWorkPlace' element={<OverView  />} />
-                      <Route path='/accountDetails/about/workAndEducation' element={<WorkAndEducation />} />
-                      <Route path='/accountDetails/about/placesLived' element={<PlacesLived />} />
-                      <Route path='/accountDetails/about/contactInfo' element={<ContactInfo />} />
-                      <Route path='/accountDetails/about/relationship' element={<Relationship />} />
-                      <Route path='/accountDetails/about/aboutYou' element={<AboutYou />} />
-                      <Route path='/accountDetails/about/lifeEvent' element={<LifeEvent />} /> 
-                    </Route>
-              
+                    <Route path='/accountDetails/friends' element={<Friends/> } />
+                    <Route path='/accountDetails/friends/allFriends' element={<AllFriends/>} />
+                    <Route path='/accountDetails/about/addWorkPlace' element={<OverView  />} />
+                    <Route path='/accountDetails/about/workAndEducation' element={<WorkAndEducation />} />
+                    <Route path='/accountDetails/about/placesLived' element={<PlacesLived />} />
+                    <Route path='/accountDetails/about/contactInfo' element={<ContactInfo />} />
+                    <Route path='/accountDetails/about/relationship' element={<Relationship />} />
+                    <Route path='/accountDetails/about/aboutYou' element={<AboutYou />} />
+                    <Route path='/accountDetails/about/lifeEvent' element={<LifeEvent />} /> 
+                </Route>
                   <Route path='/videos' element={<Videos/>} />
                   <Route path='/markerplace' element={<MarkerPlace />} />
                   <Route path='/games' element={<Games />} />
-
-                
               </Routes>
           </div>
           <div className='messenger-container'>
