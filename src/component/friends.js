@@ -1,8 +1,6 @@
 import threeDot from "../image/three-dot.png"
-import AllFriends from "./allFriends"
 import { Outlet } from "react-router"
 import { NavLink } from "react-router-dom"
-import camera from "../image/camera-man.jpeg"
 
 function Friends() {
     return (
@@ -19,16 +17,14 @@ function Friends() {
             </div>
             <div className="all-friend-requests">
                 <NavLink to="/accountDetails/friends/allFriends" className="allFriends">All friends</NavLink>
-                {/* <p className="allFriends">All friends</p> */}
-                <p className="allFriends">Recently Added</p>
-                <p className="allFriends">Birtdays</p>
-                <p className="allFriends">Current city</p>
-                <p className="allFriends">Hometown</p>
-                <p className="allFriends">Following</p>
+                <NavLink to="/accountDetails/friends/recentlyAdded" className="allFriends">Recently Added</NavLink>
+                <NavLink to="/accountDetails/friends/brithday" className="allFriends">Birtdays</NavLink>
+                <NavLink to="/accountDetails/friends/currentCity" className="allFriends">Current city</NavLink>
+                <NavLink to="/accountDetails/friends/homeTown" className="allFriends">Hometown</NavLink>
+                <NavLink to="/accountDetails/friends/following" className="allFriends">Following</NavLink>
             </div>
-            <div style={{background: "red"}}>
-            <Outlet />
-            {/* <AllFriends /> */}
+            <div>
+                <Outlet />
             </div>
             
         </div>

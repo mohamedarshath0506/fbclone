@@ -3,26 +3,26 @@ import { useEffect } from "react";
 import axios from "axios";
 import threeDot from "../image/three-dot.png"
 
-function AllFriends() {
+function Following() {
 
 
-    const [allFriends, setAllFriends] = useState([])
-  useEffect(() => {
-      const fetchData = async () => {
-        try {
-          const response = await axios.get('http://localhost:3002/allFriend');
-          setAllFriends(response.data)
-        } catch (error) {
-          console.error('Error fetching data:', error);
-        }
-      };
-      fetchData();
-    }, []);
-   console.log("allFriends", allFriends);
+    const [following, setFollowing] = useState([])
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+            const response = await axios.get('http://localhost:3002/following');
+            setFollowing(response.data)
+            } catch (error) {
+            console.error('Error fetching data:', error);
+            }
+        };
+        fetchData();
+        }, []);
+    console.log("following", following);
     return (
     
         <div className="friend-requests-items">
-            {allFriends.map((data) => {
+            {following.map((data) => {
             return <div className="friend-requests-container">
                         <div className="friend-requests-content">
                             <div className="friends">
@@ -31,7 +31,7 @@ function AllFriends() {
                             <div className="point">
                                 <div className="friends-name">
                                     <h3>{data.name}</h3>
-                                    <p>1 mutual friend</p>
+                                    <p>{data.currentCity}</p>
                                 </div>
                                 <div>
                                     <img src={threeDot} width={30} />
@@ -47,4 +47,4 @@ function AllFriends() {
     )
 }
 
-export default AllFriends
+export default Following

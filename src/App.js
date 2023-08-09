@@ -21,11 +21,14 @@ import AboutYou from './component/about-you';
 import LifeEvent from './component/life-event';
 import Friends from './component/friends';
 import AllFriends from './component/allFriends';
+import RecentlyAdded from './component/recently-added';
+import Birtdays from './component/brithday';
+import CurrentCity from './component/currentCity';
+import HomeTown from './component/homeTown';
+import Following from './component/following';
+
 
 function App() {
-
-  
-
 
   return (
     <div className="App">
@@ -43,16 +46,30 @@ function App() {
                 </Route>
                 <Route path='/accountDetails' element={<AccountDetails />} >
                   <Route path='/accountDetails/postPage' element={<PostsPage />} />
-                    <Route path="/accountDetails/about" element={<About />} />
-                    <Route path='/accountDetails/friends' element={<Friends/> } />
-                    <Route path='/accountDetails/friends/allFriends' element={<AllFriends/>} />
-                    <Route path='/accountDetails/about/addWorkPlace' element={<OverView  />} />
+                    <Route path="/accountDetails/about" element={<About />} >
+                      <Route path='/accountDetails/about/addWorkPlace' element={<OverView  />} />
+                      <Route path='/accountDetails/about/workAndEducation' element={<WorkAndEducation />} />
+                      <Route path='/accountDetails/about/placesLived' element={<PlacesLived />} />
+                      <Route path='/accountDetails/about/contactInfo' element={<ContactInfo />} />
+                      <Route path='/accountDetails/about/relationship' element={<Relationship />} />
+                      <Route path='/accountDetails/about/aboutYou' element={<AboutYou />} />
+                      <Route path='/accountDetails/about/lifeEvent' element={<LifeEvent />} /> 
+                    </Route>
+                    <Route path='/accountDetails/friends' element={<Friends/> } >
+                      <Route path='/accountDetails/friends/allFriends' element={<AllFriends/>} />
+                      <Route path='/accountDetails/friends/recentlyAdded' element={<RecentlyAdded />} />
+                      <Route path='/accountDetails/friends/brithday' element={<Birtdays />} />
+                      <Route path='/accountDetails/friends/currentCity' element={<CurrentCity />} />
+                      <Route path='/accountDetails/friends/homeTown' element={<HomeTown />} />
+                      <Route path='/accountDetails/friends/following' element={<Following />} />
+                    </Route>
+                    {/* <Route path='/accountDetails/about/addWorkPlace' element={<OverView  />} />
                     <Route path='/accountDetails/about/workAndEducation' element={<WorkAndEducation />} />
                     <Route path='/accountDetails/about/placesLived' element={<PlacesLived />} />
                     <Route path='/accountDetails/about/contactInfo' element={<ContactInfo />} />
                     <Route path='/accountDetails/about/relationship' element={<Relationship />} />
                     <Route path='/accountDetails/about/aboutYou' element={<AboutYou />} />
-                    <Route path='/accountDetails/about/lifeEvent' element={<LifeEvent />} /> 
+                    <Route path='/accountDetails/about/lifeEvent' element={<LifeEvent />} />  */}
                 </Route>
                   <Route path='/videos' element={<Videos/>} />
                   <Route path='/markerplace' element={<MarkerPlace />} />

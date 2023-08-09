@@ -3,26 +3,26 @@ import { useEffect } from "react";
 import axios from "axios";
 import threeDot from "../image/three-dot.png"
 
-function AllFriends() {
+function RecentlyAdded() {
 
 
-    const [allFriends, setAllFriends] = useState([])
+    const [recentlyAdded, setRecentlyAdded] = useState([])
   useEffect(() => {
       const fetchData = async () => {
         try {
           const response = await axios.get('http://localhost:3002/allFriend');
-          setAllFriends(response.data)
+          setRecentlyAdded(response.data)
         } catch (error) {
           console.error('Error fetching data:', error);
         }
       };
       fetchData();
     }, []);
-   console.log("allFriends", allFriends);
+   console.log("recentlyAdded", recentlyAdded);
     return (
     
         <div className="friend-requests-items">
-            {allFriends.map((data) => {
+            {recentlyAdded.map((data) => {
             return <div className="friend-requests-container">
                         <div className="friend-requests-content">
                             <div className="friends">
@@ -47,4 +47,4 @@ function AllFriends() {
     )
 }
 
-export default AllFriends
+export default RecentlyAdded

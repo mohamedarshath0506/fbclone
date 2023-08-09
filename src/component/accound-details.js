@@ -7,6 +7,7 @@ import add from "../image/add.png"
 import edit from "../image/edit.png"
 import { NavLink } from "react-router-dom"
 import { Outlet } from "react-router-dom"
+import Photos from "./photos"
 
 function AccountDetails() {
 
@@ -48,7 +49,8 @@ function AccountDetails() {
                     </nav>
                 </div>
             </div>
-            <Outlet />
+            {/* <Outlet /> */}
+            <Photos />
         </div>
     )
 }

@@ -715,7 +715,7 @@ nav a.active {
 }
 
 
-nav select.active {
+nav .select.active {
     border-radius: 5px;
     color: #1777F2;
 }
@@ -825,7 +825,6 @@ nav select.active {
     align-items: center;
     width: 400px;
     border: none;
-    /* margin: 10px 0; */
     text-align: left;
     padding: 10px 20px;
     border-radius: 14px;
@@ -952,8 +951,8 @@ nav select.active {
 
 .about-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     width: 100%;
     margin: 20px 0;
     border-radius: 10px;
@@ -967,33 +966,13 @@ nav select.active {
     align-items: center;
     flex-direction: column;
     padding: 10px 0 55px 0;
-    /* background-color: #fff; */
 }
 
 .abc {
     width: 73%;
     padding: 0 25px;
     margin: 20px 0;
-    /* background-color: #fff; */
 }
-
-/* .about-content-btn p {
-    width: 85%;
-    font-size: 15px;
-    font-weight: 600;
-    text-align: left;
-    padding: 10px 0 10px 10px;
-    margin: 0 0 10px 0;
-    border: none;
-    border-radius: 5px;
-    color: #7A7C7F;
-    background-color: #fff;
-} */
-
-
-/* .about-content-btn p:hover {
-    background-color: #80808024;
-} */
 
 .about-header-title {
     width: 85%;
@@ -1150,14 +1129,19 @@ nav select.active {
 }
 
 .friend-requests {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     width: 100%;
     margin: 20px 0;
     padding: 5px 0 20px;
     border-radius: 10px;
     background-color: #fff;
+}
+
+.friend-requests-items {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    /* gap: 10px; */
+    padding: 0 13px;
 }
 
 .friend-requests-container {
@@ -1168,10 +1152,9 @@ nav select.active {
 
 .friend-requests-content {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     width: 460px;
-    border: 1px solid;
+    border: 1px solid #f2e8e8;
     margin: 10px 0 0;
     text-align: left;
     padding: 10px 20px;
@@ -1193,9 +1176,10 @@ nav select.active {
 }
 
 .friends-name p {
+    width: 140px;
     font-size: 13px;
     margin: 0;
-    color: #D6CAB2;
+    color: #928976;
 }
 
 .find-friend {
@@ -1251,9 +1235,12 @@ nav select.active {
 }
 
 .allFriends:hover {
-    /* border-bottom: 5px solid; */
-    /* color: #338DF9; */
     background-color: #80808024;
+}
+
+nav .allFriends.active {
+    border-radius: 5px;
+    color: #1777F2;
 }
 
 .three-dot-friend {
@@ -1266,3 +1253,9 @@ nav select.active {
     background-color: #E4E6EB;
     /* border-radius: 30px; */
 }
+
+.point {
+    display: flex;
+    gap: 190px;
+}
+

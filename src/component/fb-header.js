@@ -3,9 +3,35 @@ import message from "../image/message.png"
 import bell from "../image/bell.png"
 import search from "../image/search.png"
 import black from "../image/black.jpg"
+import { useState } from "react"
+import { useEffect } from "react"
+import axios from "axios"
 
 function FbHeader() {
 
+    
+    // const itemList = [
+    //     "Apple",
+    //     "Orange",
+    //     "Banana",
+    //     "Cherry",
+    //     "Milk",
+    //     "Peanuts",
+    //     "Butter",
+    //     "Tomato"
+    //   ];
+    
+    //   const [filteredList, setFilteredList] = new useState(itemList);
+
+    //   const filterBySearch = (event) => {
+    //     const query = event.target.value;
+    //     var updatedList = [...itemList];
+    //     updatedList = updatedList.filter((item) => {
+    //       return item.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+    //     });
+    //     setFilteredList(updatedList);
+    //   };
+    //   console.log("filteredList", filteredList);
     return (
         <div className="fb-clone-container">
             <div className="container">

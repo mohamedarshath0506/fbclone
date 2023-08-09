@@ -1,5 +1,4 @@
 import { NavLink, Outlet } from "react-router-dom"
-import OverView from "./overView"
 
 function About() {
     return (
@@ -17,7 +16,7 @@ function About() {
                         <NavLink to="/accountDetails/about/lifeEvent" className="about-header-title">Life events</NavLink>
                 </div>
                 <div className="abc">
-                   <OverView />
+                   <Outlet />
                 </div>
             </div>
     )
