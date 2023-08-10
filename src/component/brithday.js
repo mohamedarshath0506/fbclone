@@ -7,18 +7,18 @@ function Birtdays() {
 
 
     const [birtdays, setBirtdays] = useState([])
-  useEffect(() => {
-      const fetchData = async () => {
-        try {
-          const response = await axios.get('http://localhost:3002/birthday');
-          setBirtdays(response.data)
-        } catch (error) {
-          console.error('Error fetching data:', error);
-        }
-      };
-      fetchData();
-    }, []);
-   console.log("birtdays", birtdays);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+            const response = await axios.get('http://localhost:3002/birthday');
+            setBirtdays(response.data)
+            } catch (error) {
+            console.error('Error fetching data:', error);
+            }
+        };
+        fetchData();
+        }, []);
+    console.log("birtdays", birtdays);
     return (
     
         <div className="friend-requests-items">

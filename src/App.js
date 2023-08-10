@@ -26,7 +26,15 @@ import Birtdays from './component/brithday';
 import CurrentCity from './component/currentCity';
 import HomeTown from './component/homeTown';
 import Following from './component/following';
-
+import Photos from './component/photos';
+import PhotosOfYou from './component/photos-of-you';
+import YourPhotos from './component/your-photos';
+import Albums from './component/albums';
+import Video from './component/video';
+import YourVideos from './component/your-videos';
+import ReelPage from './component/reel-page.';
+import YourReels from './component/your-reels';
+import SavedReels from './component/saved-reels';
 
 function App() {
 
@@ -63,13 +71,18 @@ function App() {
                       <Route path='/accountDetails/friends/homeTown' element={<HomeTown />} />
                       <Route path='/accountDetails/friends/following' element={<Following />} />
                     </Route>
-                    {/* <Route path='/accountDetails/about/addWorkPlace' element={<OverView  />} />
-                    <Route path='/accountDetails/about/workAndEducation' element={<WorkAndEducation />} />
-                    <Route path='/accountDetails/about/placesLived' element={<PlacesLived />} />
-                    <Route path='/accountDetails/about/contactInfo' element={<ContactInfo />} />
-                    <Route path='/accountDetails/about/relationship' element={<Relationship />} />
-                    <Route path='/accountDetails/about/aboutYou' element={<AboutYou />} />
-                    <Route path='/accountDetails/about/lifeEvent' element={<LifeEvent />} />  */}
+                    <Route path='/accountDetails/photos' element={<Photos />} >
+                      <Route path='/accountDetails/photos/photosOfYou' element={<PhotosOfYou />} />
+                      <Route path='/accountDetails/photos/yourPhotos' element={<YourPhotos />} />
+                      <Route path='/accountDetails/photos/albums' element={<Albums />} />
+                    </Route>
+                    <Route path='/accountDetails/video' element={<Video />} >
+                      <Route path='/accountDetails/video/yourVideos' element={<YourVideos />} />
+                    </Route>
+                    <Route path='/accountDetails/reelPage' element={<ReelPage />} >
+                      <Route path='/accountDetails/reelPage/yourReels' element={<YourReels />} />
+                      <Route path='/accountDetails/reelPage/savedReels' element={<SavedReels />} />
+                    </Route>
                 </Route>
                   <Route path='/videos' element={<Videos/>} />
                   <Route path='/markerplace' element={<MarkerPlace />} />
@@ -77,6 +90,7 @@ function App() {
               </Routes>
           </div>
           <div className='messenger-container'>
+          {/* <Video /> */}
           </div>
         </div>
     </div>

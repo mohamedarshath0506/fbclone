@@ -26,7 +26,7 @@
 .search-bar {
     float: left;
     text-align: right;
-    width: 60%;
+    width: 65%;
     position: relative;
 }
 
@@ -34,7 +34,7 @@
 .search-icon {
     position: absolute;
     top: 10px;
-    left: 406px;
+    left: 375px;
 }
 
 .header h1 {
@@ -55,7 +55,7 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 30%;
+    /* width: 30%; */
     float: right;
     text-align: right;
 }
@@ -184,7 +184,7 @@ nav a.active {
 
 .stories-name {
     position: absolute;
-    left: 35px;
+    left: 13px;
     bottom: 30px;
     color: #fff;
 }
@@ -195,15 +195,11 @@ nav a.active {
 
 .stories-icons {
     position: absolute;
-    top: 25px;
-    left: 30px;
+    top: 21px;
+    left: 12px;
     border-radius: 20px;
     background-color: cornsilk;
 }
-/* 
-.stories-icons img:hover {
-    background-color: #80808024;
-} */
 
 .i-icons {
     position: absolute;
@@ -392,7 +388,7 @@ nav a.active {
 }
 
 .reelsMenu {
-    width: 50%;
+    width: 55%;
     float: left;
 }
 
@@ -992,6 +988,10 @@ nav .select.active {
     background-color: #80808024;
 }
 
+.active, nav .about-header-title {
+    color: #1777F2;
+}
+
 .about-header {
     width: 100%;
     text-align: justify;
@@ -1001,10 +1001,6 @@ nav .select.active {
 .right-side-line hr {
     margin: 0;
 }
-
-/* .addwork-container {
-    width: 70%;
-} */
 
 .add-work-content {
     display: flex;
@@ -1238,7 +1234,7 @@ nav .select.active {
     background-color: #80808024;
 }
 
-nav .allFriends.active {
+.active,nav .allFriends {
     border-radius: 5px;
     color: #1777F2;
 }
@@ -1256,6 +1252,115 @@ nav .allFriends.active {
 
 .point {
     display: flex;
-    gap: 190px;
+    gap: 195px;
 }
 
+.photos-container {
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.photos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photos-content {
+    display: flex;
+    gap: 10px;
+}
+
+.photo-header-leftSide p {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.photo-header-rightSide {
+    display: flex;
+    gap: 10px;
+}
+
+.photo-header-rightSide p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2078F2;
+}
+
+.photos-select-page {
+    display: flex;
+    gap: 10px;
+}
+
+.photos-select-navlink {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 5px 0;
+    padding: 15px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #65676B;
+
+}
+
+.photos-select-navlink:hover  {
+    background-color: #a9acb140;
+    /* color: red; */
+}
+
+.active, nav .photos-select-navlink {
+    color: #1777F2;
+}
+
+.your-photos-container {
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0 0 0 12px;
+}
+
+.albums-container p {
+    text-align: left;
+    padding: 0 5px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+}
+
+.albums-content {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E4E6EB;
+    border-radius: 10px;
+    background-color: #E4E6EB;
+}
+
+.album-profile {
+    text-align: left;
+    padding: 0 5px;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0 0 0;
+}
+
+.album-item {
+    font-size: 13px;
+    text-align: left;
+    padding: 0 5px;
+    margin: 5px 0;
+    color: #050B15;
+}
+
+.yourReels-container h2 {
+    font-size: 20px;
+    margin: 0;
+    padding: 24px 0 36px;
+    color: #65676B;
+}

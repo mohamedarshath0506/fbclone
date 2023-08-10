@@ -26,7 +26,7 @@ console.log('stories', stories)
                     <div className="stories-icons">
                         <img src={storie.img} alt="API Image"  width={20} height={20} />
                     </div>                        
-                    <img src={storie.img} alt="API Image"  width={200} height={300} />
+                    <img src={storie.img} alt="API Image"  width={150} height={300} />
                     <p className="stories-name">{storie.name}</p>
                 </div>
             ))}

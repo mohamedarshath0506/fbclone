@@ -7,7 +7,7 @@ import add from "../image/add.png"
 import edit from "../image/edit.png"
 import { NavLink } from "react-router-dom"
 import { Outlet } from "react-router-dom"
-import Photos from "./photos"
+import Friends from "./friends"
 
 function AccountDetails() {
 
@@ -41,16 +41,17 @@ function AccountDetails() {
                         <NavLink to="/accountDetails/postPage" className="select">Posts</NavLink>
                         <NavLink to="/accountDetails/about" className="select">About</NavLink>
                         <NavLink to="/accountDetails/friends" className="select">Friends</NavLink>
-                        <p className="select">Photos</p>
-                        <p className="select">Videos</p>
-                        <p className="select">Reels</p>
+                        <NavLink to="/accountDetails/photos" className="select">Photos</NavLink>
+                        <NavLink to="/accountDetails/video" className="select">Videos</NavLink>
+                        <NavLink to="/accountDetails/reelPage" className="select">Reels</NavLink>
                         <p className="select">More</p>
                     </div>
                     </nav>
                 </div>
             </div>
-            {/* <Outlet /> */}
-            <Photos />
+            <Outlet />
+            {/* <Friends /> */}
+            {/* <Photos /> */}
         </div>
     )
 }

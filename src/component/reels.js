@@ -23,7 +23,7 @@ function Reels() {
                     <div className="stories-icons">
                         <img src={reel.img} width={20} height={20} />
                     </div>
-                    <img src={reel.img} width={200} height={300} />
+                    <img src={reel.img} width={150} height={300} />
                     <p className="stories-name">{reel.name}</p>
                 </div>
                 ))}
