@@ -10,28 +10,39 @@ import axios from "axios"
 function FbHeader() {
 
     
-    // const itemList = [
-    //     "Apple",
-    //     "Orange",
-    //     "Banana",
-    //     "Cherry",
-    //     "Milk",
-    //     "Peanuts",
-    //     "Butter",
-    //     "Tomato"
-    //   ];
-    
-    //   const [filteredList, setFilteredList] = new useState(itemList);
+    // const [searchTerm, setSearchTerm] = useState('');
+    // console.log("searchTerm", searchTerm);
+    // const [data, setData] = useState([]);
+    // console.log("data", data);
+    // const [isLoading, setIsLoading] = useState(false);
+  
+    // useEffect(() => {
+    //   fetchData();
+    // }, [searchTerm]);
+  
+    // const fetchData = async () => {
+    //   if (searchTerm.trim() === '') {
+    //     setData([]);
+    //     return;
+    //   }
+  
+    //   setIsLoading(true);
+  
+    //   try {
+    //     const response = await fetch(`http://localhost:3002/post`);
+    //     const jsonData = await response.json();
+    //     setData(jsonData);
+    //   } catch (error) {
+    //     console.error('Error fetching data:', error);
+    //   } finally {
+    //     setIsLoading(false);
+    //   }
+    // };
+  
+    // const handleInputChange = (event) => {
+    //   setSearchTerm(event.target.value);
+    // };
 
-    //   const filterBySearch = (event) => {
-    //     const query = event.target.value;
-    //     var updatedList = [...itemList];
-    //     updatedList = updatedList.filter((item) => {
-    //       return item.toLowerCase().indexOf(query.toLowerCase()) !== -1;
-    //     });
-    //     setFilteredList(updatedList);
-    //   };
-    //   console.log("filteredList", filteredList);
     return (
         <div className="fb-clone-container">
             <div className="container">
@@ -41,6 +52,7 @@ function FbHeader() {
                 <div className="search-bar">
                     <img src={search} className="search-icon" />
                     <input type="text" placeholder="Search Fbclone" />
+                    
                 </div>
                 <div className="fb-icons">
                     <div className="tooltip">

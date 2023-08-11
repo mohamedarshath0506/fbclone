@@ -30,31 +30,31 @@ function Page() {
                 
                         <div className="profil-post-page">
                             <div className="profil">
-                                <img src={cameraMan} width={30} height={30} />
+                                <img src={cameraMan} alt="cameraMan" width={30} height={30} />
                                 <p>{post.name}</p>
                             </div>
                             <div className="close-page">
-                                <img src={threeDot} width={20} />
-                                <img src={multiple}width={20} />
+                                <img src={threeDot} alt="threeDot" width={20} />
+                                <img src={multiple} alt="multiple" width={20} />
                             </div>
                         </div>
                         <div>
-                            <img src={post.img} width={818} height={500} />
+                            <img src={post.img} alt="post" width={818} height={500} />
                         </div>
                         <hr />
                         <hr />
                         <div className="like-comment-share-btn">
                             <div className="content like-content icons-container">
-                                <img src={like} width={30} />
+                                <img src={like} alt="like" width={30} />
                                 <p>Like</p> 
                                 <Icons />
                             </div>
                             <div className="content comment-content ">
-                                <img src={comment} width={30} />
+                                <img src={comment} alt="comment" width={30} />
                                 <p>Comment</p>
                             </div>
                             <div className="content share-content">
-                                <img src={share} width={30}/>
+                                <img src={share} alt="share" width={30}/>
                                 <p>Share</p>
                             </div>
                         </div>
@@ -65,4 +65,4 @@ function Page() {
     )
 }
 
-export default Page
+export default Page;
