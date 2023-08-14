@@ -1,6 +1,6 @@
 import './App.css';
 import { Route, Routes } from 'react-router';
-import FbHeader from './component/fb-header';
+import FbHeader from './component/header/fb-header';
 import Stories from './component/side-menus/home/stories/stories';
 import Reels from './component/side-menus/home/reels/reels';
 import Rooms from './component/side-menus/home/rooms/rooms';
@@ -30,11 +30,12 @@ import Photos from './component/side-menus/accound-holder/photos-page/photos/pho
 import PhotosOfYou from './component/side-menus/accound-holder/photos-page/photos-of-your/photos-of-you';
 import YourPhotos from './component/side-menus/accound-holder/photos-page/your-photos/your-photos';
 import Albums from './component/side-menus/accound-holder/photos-page/albums/albums';
-import Video from './component/video';
+import Video from './component/side-menus/accound-holder/videos/video/video';
 import YourVideos from './component/side-menus/accound-holder/videos/your-videos';
 import ReelPage from './component/side-menus/accound-holder/reels-page/reels/reel-page.';
 import YourReels from './component/side-menus/accound-holder/reels-page/your-reels/your-reels';
 import SavedReels from './component/side-menus/accound-holder/reels-page/saved-reels/saved-reels';
+import Messenger from './component/messenger';
 
 
 
@@ -45,7 +46,7 @@ function App() {
     <div className="App">
       <FbHeader />
           <div className='section-container'>
-          <div className='sideMenu'>
+            <div className='sideMenu'>
               <SideBarMenus />
             </div>
             <div className='reelsMenu'>
@@ -92,10 +93,11 @@ function App() {
                   <Route path='/games' element={<Games />} />
               </Routes>
           </div>
-          <div className='messenger-container'>
-         
+            <div className='messenger-container'>
+            {/* <Messenger /> */}
+            
+            </div>
           </div>
-        </div>
     </div>
   );
 }

@@ -8,4 +8,4 @@ function Games() {
     )
 }
 
-export default Games
+export default Games;

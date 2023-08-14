@@ -25,7 +25,7 @@ import share from "../../../../image/share.png"
 
 function PostsPage() {
     return (
-        <div className="intro-container">
+        <div className="intro-container ">
             <div>
                 <div className="postspage-content">
                     <div>
@@ -165,6 +165,7 @@ function PostsPage() {
                     </div>
                 </div>
             </div>
+            
         </div>
     )
 }

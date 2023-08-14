@@ -4,7 +4,7 @@ import stories from "../../../../image/stories.svg"
 import video from "../../../../image/video.svg"
 import { Outlet } from "react-router-dom"
 import YourMind from "../your-mine/your-mind"
-import Page from "../../../page"
+import Page from "../post/page"
 
 function ReelsMenu() {
     return(
