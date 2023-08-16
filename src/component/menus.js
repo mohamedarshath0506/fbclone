@@ -18,6 +18,10 @@
 // function Menus() {
 //     return(
 //         <div className="hover-container">
+//             <video width="320" height="240" controls autoplay>
+//                               <source src="movie.mp4" type="video/mp4"/>
+//                               <source src="movie.ogg" type="video/ogg"/>
+//                             </video>
 //           {/* <NavLink to="/page"> <div className="menu-contsiner">
 //               <img src={home} width={30} />
 //                 <h2>Home</h2>

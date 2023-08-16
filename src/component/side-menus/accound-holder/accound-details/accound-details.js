@@ -8,7 +8,19 @@ import edit from "../../../../image/edit.png"
 import { NavLink } from "react-router-dom"
 import { Outlet } from "react-router-dom"
 
+import * as React from 'react';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+
 function AccountDetails() {
+
+    const [age, setAge] = React.useState('');
+
+    const handleChange = (event) => {
+      setAge(event.target.value);
+    };
 
     return (
         <div className="menu-1">
@@ -43,7 +55,30 @@ function AccountDetails() {
                         <NavLink to="/accountDetails/photos" className="select">Photos</NavLink>
                         <NavLink to="/accountDetails/video" className="select">Videos</NavLink>
                         <NavLink to="/accountDetails/reelPage" className="select">Reels</NavLink>
-                        <p className="select">More</p>
+                        <NavLink><FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+                            <InputLabel id="demo-select-small-label">more</InputLabel>
+                            <Select
+                                labelId="demo-select-small-label"
+                                id="demo-select-small"
+                                value={age}
+                                label="Age"
+                                onChange={handleChange}
+                            >
+                                <MenuItem value=""><em>None</em></MenuItem>
+                                <MenuItem value={10}>Check-ins</MenuItem>
+                                <MenuItem value={20}>Sports</MenuItem>
+                                <MenuItem value={30}>Music</MenuItem>
+                                <MenuItem value={40}>Movies</MenuItem>
+                                <MenuItem value={50}>TV shows</MenuItem>
+                                <MenuItem value={60}>Books</MenuItem>
+                                <MenuItem value={70}>Apps and games</MenuItem>
+                                <MenuItem value={80}>Likes</MenuItem>
+                                <MenuItem value={90}>Events</MenuItem>
+                                <MenuItem value={100}>Reviews given</MenuItem>
+                                <MenuItem value={110}>Groups</MenuItem>
+                                <MenuItem value={120}>Manage sections</MenuItem>
+                            </Select>
+                        </FormControl></NavLink>
                     </div>
                     </nav>
                 </div>

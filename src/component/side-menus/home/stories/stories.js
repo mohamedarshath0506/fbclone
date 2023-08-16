@@ -18,6 +18,13 @@ function Stories() {
 
 
 console.log('stories', stories)
+
+ const [count, setCount] = useState('http://localhost:3002/stories')
+ console.log("count", count);
+// const handleClick = () => {
+//   console.log("Current count:", count);
+//   setCount(count + 1)
+// }
     
     return (
         <div className="stories-reels-rooms-page">
@@ -30,6 +37,7 @@ console.log('stories', stories)
                     <p className="stories-name">{storie.name}</p>
                 </div>
             ))}
+            
         </div>
     )
 }

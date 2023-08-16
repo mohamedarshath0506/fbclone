@@ -37,8 +37,6 @@ import YourReels from './component/side-menus/accound-holder/reels-page/your-ree
 import SavedReels from './component/side-menus/accound-holder/reels-page/saved-reels/saved-reels';
 import Messenger from './component/messenger';
 
-
-
 function App() {
 
 
@@ -94,8 +92,7 @@ function App() {
               </Routes>
           </div>
             <div className='messenger-container'>
-            {/* <Messenger /> */}
-            
+
             </div>
           </div>
     </div>

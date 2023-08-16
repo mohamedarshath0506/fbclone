@@ -18,13 +18,13 @@ function ContactInfo() {
                 <h3>Contact info</h3>
             </div>
             <div className="school-are-college-place">
-                <img src={addwork} width={50} />
+                <img src={addwork} alt="addwork" width={50} />
                 <p>Add a phone number confirmation badge</p>
             </div>
             <div className="location-detail-content">
                 <div className="degree">
                     <div>
-                        <img src={phone} width={30} />
+                        <img src={phone} alt="phone" width={30} />
                     </div>
                     <div className="school-name">
                         <h5>7358654365</h5>
@@ -32,14 +32,14 @@ function ContactInfo() {
                     </div>
                 </div>
                 <div className="three-dot">
-                    <img src={lock} width={30} />
-                    <img src={edit} width={30} className="dot-icon" />
+                    <img src={lock} alt="lock" width={30} />
+                    <img src={edit} alt="edit" width={30} className="dot-icon" />
                 </div>
             </div>
             <div className="location-detail-content">
                 <div className="degree">
                     <div>
-                        <img src={email} width={30} />
+                        <img src={email} alt="email" width={30} />
                     </div>
                     <div className="school-name">
                         <h5>arshath1100@gmail.com</h5>
@@ -47,19 +47,19 @@ function ContactInfo() {
                     </div>
                 </div>
                 <div className="three-dot">
-                    <img src={lock} width={30} />
-                    <img src={edit} width={30} className="dot-icon" />
+                    <img src={lock} alt="lock" width={30} />
+                    <img src={edit} alt="edit" width={30} className="dot-icon" />
                 </div>
             </div>  
             <div className="school-content">
                 <h3>Websites and social links</h3>
             </div>
             <div className="school-are-college-place">
-                <img src={addwork} width={50} />
+                <img src={addwork} alt="addwork" width={50} />
                 <p>Add a website</p>
             </div>
             <div className="school-are-college-place">
-                <img src={addwork} width={50} />
+                <img src={addwork} alt="addwork" width={50} />
                 <p>Add a social link</p>
             </div>
             <div className="school-content">
@@ -68,7 +68,7 @@ function ContactInfo() {
             <div className="location-detail-content">
                 <div className="degree">
                     <div>
-                        <img src={male} width={30} />
+                        <img src={male} alt="male" width={30} />
                     </div>
                     <div className="school-name">
                         <h5>Male</h5>
@@ -76,13 +76,13 @@ function ContactInfo() {
                     </div>
                 </div>
                 <div className="three-dot">
-                    <img src={edit} width={30} className="dot-icon" />
+                    <img src={edit} alt="edit" width={30} className="dot-icon" />
                 </div>
             </div> 
             <div className="location-detail-content">
                 <div className="degree">
                     <div>
-                        <img src={male} width={30} />
+                        <img src={male} alt="male" width={30} />
                     </div>
                     <div className="school-name">
                         <h5>he/him</h5>
@@ -90,14 +90,14 @@ function ContactInfo() {
                     </div>
                 </div>
                     <div className="three-dot">
-                        <img src={earth} width={30} />
-                        <img src={edit} width={30} className="dot-icon" />
+                        <img src={earth} alt="earth" width={30} />
+                        <img src={edit} alt="edit" width={30} className="dot-icon" />
                     </div>
                 </div> 
                 <div className="location-detail-content">
                     <div className="degree">
                         <div>
-                            <img src={cake} width={30} />
+                            <img src={cake} alt="cake" width={30} />
                         </div>
                         <div className="school-name">
                             <h5>June 6</h5>
@@ -105,8 +105,8 @@ function ContactInfo() {
                         </div>
                     </div>
                     <div className="three-dot">
-                        <img src={threeperson} width={30} />
-                        <img src={edit} width={30} className="dot-icon" />
+                        <img src={threeperson} alt="threeperson" width={30} />
+                        <img src={edit} alt="edit" width={30} className="dot-icon" />
                     </div>
                 </div> 
                 <div className="location-detail-content">
@@ -117,13 +117,13 @@ function ContactInfo() {
                         </div>
                     </div>
                     <div className="three-dot">
-                        <img src={threeperson} width={30} />
+                        <img src={threeperson} alt="threeperson" width={30} />
                     </div>
                 </div> 
                 <div className="location-detail-content">
                     <div className="degree">
                         <div>
-                            <img src={male} width={30} />
+                            <img src={male} about="male" width={30} />
                         </div>
                         <div className="school-name">
                             <h5>English language</h5>
@@ -131,8 +131,8 @@ function ContactInfo() {
                         </div>
                     </div>
                     <div className="three-dot">
-                        <img src={earth} width={30} />
-                        <img src={edit} width={30} className="dot-icon" />
+                        <img src={earth} alt="earth" width={30} />
+                        <img src={edit} alt="edit" width={30} className="dot-icon" />
                     </div>
                 </div> 
         </div>

@@ -5,8 +5,10 @@ import video from "../../../../image/video.svg"
 import { Outlet } from "react-router-dom"
 import YourMind from "../your-mine/your-mind"
 import Page from "../post/page"
+import React from "react"
 
 function ReelsMenu() {
+    
     return(
         <div>
             <nav>

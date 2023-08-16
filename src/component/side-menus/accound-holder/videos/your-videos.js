@@ -21,10 +21,11 @@ function YourVideos() {
     return (
         <div className="your-photos-container">
             {yourVideos.map((video) => (
-                <video width={260} height={146} controls style={{borderRadius: "10px"}}>
+                <video width={260} height={146} controls autoplay style={{borderRadius: "10px"}} >
                     <source src={video.videoUrl} type="video/mp4"/>
+                    <source src={video.videoUrl} type="video/ogg" />
                 </video>
-            ))}           
+            ))}        
         </div>   
     )
 }
