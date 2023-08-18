@@ -64,8 +64,8 @@ function AccountDetails() {
                                 label="Age"
                                 onChange={handleChange}
                             >
-                                <MenuItem value=""><em>None</em></MenuItem>
-                                <MenuItem value={10}>Check-ins</MenuItem>
+                                <MenuItem value="" style={{width: "330px"}}><em>None</em></MenuItem>
+                            <NavLink to="/accountDetails/checkIns"><MenuItem value={10} style={{width: "330px"}}>Check-ins</MenuItem></NavLink>
                                 <MenuItem value={20}>Sports</MenuItem>
                                 <MenuItem value={30}>Music</MenuItem>
                                 <MenuItem value={40}>Movies</MenuItem>

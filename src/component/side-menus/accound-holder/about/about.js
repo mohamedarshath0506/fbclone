@@ -1,7 +1,9 @@
 import { NavLink, Outlet } from "react-router-dom"
+import Friends from "../friends/friends";
 
 function About() {
     return (
+        <div>
             <div className="about-container">
                 <div className="about-content-btn">
                     <div className="about-header">
@@ -18,6 +20,10 @@ function About() {
                 <div className="abc">
                    <Outlet />
                 </div>
+            </div>
+            {/* <div>
+                <Friends />
+            </div> */}
             </div>
     )
 }

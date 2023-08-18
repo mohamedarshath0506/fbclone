@@ -35,7 +35,7 @@ import YourVideos from './component/side-menus/accound-holder/videos/your-videos
 import ReelPage from './component/side-menus/accound-holder/reels-page/reels/reel-page.';
 import YourReels from './component/side-menus/accound-holder/reels-page/your-reels/your-reels';
 import SavedReels from './component/side-menus/accound-holder/reels-page/saved-reels/saved-reels';
-import Messenger from './component/messenger';
+import CheckIns from './component/side-menus/accound-holder/more/checkIns';
 
 function App() {
 
@@ -84,6 +84,9 @@ function App() {
                     <Route path='/accountDetails/reelPage' element={<ReelPage />} >
                       <Route path='/accountDetails/reelPage/yourReels' element={<YourReels />} />
                       <Route path='/accountDetails/reelPage/savedReels' element={<SavedReels />} />
+                    </Route>
+                    <Route path='/accountDetails/checkIns' element={<CheckIns />} >
+
                     </Route>
                 </Route>
                   <Route path='/videos' element={<Videos/>} />

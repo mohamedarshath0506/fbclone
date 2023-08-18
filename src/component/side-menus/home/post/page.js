@@ -13,8 +13,9 @@ import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { styled, Box } from '@mui/system';
 import { Modal } from '@mui/base/Modal';
-// import Popper from '@mui/material/Popper';
-// import { useSpring, animated } from '@react-spring/web';
+import Popper from '@mui/material/Popper';
+import { useSpring, animated } from '@react-spring/web';
+import Grid from '@mui/material/Grid';
 
 function Page() {
 
@@ -124,47 +125,59 @@ function Page() {
     // );
 
 
-    // const [open, setOpen] = React.useState(false);
-    // const [anchorEl, setAnchorEl] = React.useState(null);
+    const [open, setOpen] = React.useState(false);
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const [placement, setPlacement] = React.useState();
 
     // const handleClick = (event) => {
     //   setAnchorEl(event.currentTarget);
     //   setOpen((previousOpen) => !previousOpen);
     // };
+    const handleClick = (newPlacement) => (event) => {
+      setAnchorEl(event.currentTarget);
+      setOpen((prev) => placement !== newPlacement || !prev);
+      setPlacement(newPlacement);
+    };
+  
 
-    // const canBeOpen = open && Boolean(anchorEl);
-    // const id = canBeOpen ? 'spring-popper' : undefined;
+    const canBeOpen = open && Boolean(anchorEl);
+    const id = canBeOpen ? 'spring-popper' : undefined;
 
-    // const Fade = React.forwardRef(function Fade(props, ref) {
-    //   const { in: open, children, onEnter, onExited, ...other } = props;
-    //   const style = useSpring({
-    //     from: { opacity: 0 },
-    //     to: { opacity: open ? 1 : 0 },
-    //     onStart: () => {
-    //       if (open && onEnter) {
-    //         onEnter();
-    //       }
-    //     },
-    //     onRest: () => {
-    //       if (!open && onExited) {
-    //         onExited();
-    //       }
-    //     },
-    //   });
+    const Fade = React.forwardRef(function Fade(props, ref) {
+      const { in: open, children, onEnter, onExited, ...other } = props;
+      const style = useSpring({
+        from: { opacity: 0 },
+        to: { opacity: open ? 1 : 0 },
+        onStart: () => {
+          if (open && onEnter) {
+            onEnter();
+          }
+        },
+        onRest: () => {
+          if (!open && onExited) {
+            onExited();
+          }
+        },
+      });
     
-    //   return (
-    //     <animated.div ref={ref} style={style} {...other}>
-    //       {children}
-    //     </animated.div>
-    //   );
-    // });
+      return (
+        <animated.div ref={ref} style={style} {...other}>
+          {children}
+        </animated.div>
+      );
+    });
     
-    // Fade.propTypes = {
-    //   children: PropTypes.element,
-    //   in: PropTypes.bool,
-    //   onEnter: PropTypes.func,
-    //   onExited: PropTypes.func,
+    Fade.propTypes = {
+      children: PropTypes.element,
+      in: PropTypes.bool,
+      onEnter: PropTypes.func,
+      onExited: PropTypes.func,
+    };
+    const [inputValue, setInputValue] = useState('');
+    // const handleInputChange = (event) => {
+    //   setInputValue(event.target.value);
     // };
+  console.log("inputValue", inputValue);
     
     return(
         <div className="hover-container">
@@ -189,26 +202,35 @@ function Page() {
                         <hr />
                         <div className="like-comment-share-btn">
                             <div className="content like-content icons-container">
-                                <img src={like} alt="like" width={30} />
+                                {/* <img src={like} alt="like" width={30} />
                                 <p>Like</p> 
-                                <Icons />
-                                {/* <button style={{border: "none"}} className="content like-content icons-container" aria-describedby={id} type="button" onClick={handleClick}>
-                                  <img src={like} alt="like" width={30} />
-                                  <p>Like</p>
-                                </button>
+                                <Icons /> */}
                                 
+                                    <button style={{border: "none"}} className="content like-content icons-container" aria-describedby={id} type="button" onClick={handleClick("top-")}>
+                                      <img src={like} alt="like" width={30} />
+                                      <p>Like</p>
+                                    </button>
+                                  
+                                {/* <Grid container justifyContent="center">
+                                  <Grid item> */}
                                 <Popper id={id} open={open} anchorEl={anchorEl} transition>
                                   {({ TransitionProps }) => (
-                                    <Fade style={{position: "absolute", top: 0,}}
+                                    <Fade
                                     {...TransitionProps}
                                     >
+                                    <Grid container justifyContent="center">
+                                      <Grid item>
                                       <Box sx={{p: 1}}>
                                         <Icons />
                                       </Box>
+                                      </Grid>
+                                    </Grid>
                                     </Fade>
                                   )}
-                                </Popper> */}
-
+                                </Popper>
+                                {/* </Grid>
+                                </Grid> */}
+                                
                             </div>
                             <div className="content comment-content" onClick={handleOpen} >
                                 <img src={comment} alt="comment" width={30} />
@@ -231,12 +253,16 @@ function Page() {
                     slots={{ backdrop: StyledBackdrop }}
                 >
                     <Box sx={style}>
-                        <h2 id="unstyled-modal-title">Text in a modal</h2>
-                        <input type="text" id="unstyled-modal-description" style={{width: "375px", height: "40px", padding: "5px", borderRadius: "10px", border: "none", background: "#F0F2F5"}} />
+                        {/* <h2 id="unstyled-modal-title">Text in a modal</h2> */}
+                        {/* {inputValue.map((item) =>(
+                          <p style={{textAlign: "end", paddingRight: "15px"}}>{item}</p>
+                        ))} */}
+                        <p style={{textAlign: "end", paddingRight: "15px"}}>Arshath</p>
+                        <input type="text" id="unstyled-modal-description" style={{width: "385px", height: "40px", padding: "5px", borderRadius: "10px", border: "none", background: "#F0F2F5"}} onChange={(e) => setInputValue(e.target.value)} />
+                        {/* <input type="text" onChange={handleInputChange} /> */}
                     </Box>
                 </StyledModal>
             </div>
-
         </div>
     )
 }

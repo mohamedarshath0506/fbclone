@@ -11,6 +11,7 @@ import Stack from '@mui/material/Stack';
 import { styled } from '@mui/system';
 import { Badge, badgeClasses } from '@mui/base/Badge';
 import { grey } from "@mui/material/colors"
+import { useState } from "react"
 
 
 function FbHeader() {
@@ -63,6 +64,28 @@ function FbHeader() {
     `,
   );
 
+  const [inputValue, setInputValue] = useState('');
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+  console.log("inputValue", inputValue);
+
+// const [searchQuery, setSearchQuery] = useState('');
+//   const [filteredData, setFilteredData] = useState(data);
+
+//   const handleSearchChange = (event) => {
+//     const query = event.target.value;
+//     setSearchQuery(query);
+
+//     const filtered = data.filter(item =>
+//       item.toLowerCase().includes(query.toLowerCase())
+//     );
+
+//     setFilteredData(filtered);
+//   };
+
+
     return (
         <div className="fb-clone-container">
             <div className="container">
@@ -71,7 +94,7 @@ function FbHeader() {
                 </div>
                 <div className="search-bar">
                     <img src={search} className="search-icon" />
-                    <input type="text" placeholder="Search Fbclone" />
+                    <input type="text" placeholder="Search Fbclone" onChange={handleInputChange} />
                     
                 </div>
                 <div className="fb-icons">
@@ -81,12 +104,12 @@ function FbHeader() {
                         
                     </div>
                     <Stack spacing={4} direction="row">
-                    <StyledBadge badgeContent={0} >
-                    <div className="tooltip">
-                        <img src={bell} width={31} className="fb-icon-img" />
-                        <p className="tooltiptext">Notifications</p>
-                    </div>
-                    </StyledBadge>
+                        <StyledBadge badgeContent={0} >
+                            <div className="tooltip" aria-describedby={id} type="button" >
+                                <img src={bell} width={31} className="fb-icon-img" />
+                                <p className="tooltiptext">Notifications</p>
+                            </div>
+                        </StyledBadge>
                     </Stack>
                     <div className="tooltip">
                         
