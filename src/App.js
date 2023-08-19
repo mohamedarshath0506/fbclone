@@ -36,6 +36,15 @@ import ReelPage from './component/side-menus/accound-holder/reels-page/reels/ree
 import YourReels from './component/side-menus/accound-holder/reels-page/your-reels/your-reels';
 import SavedReels from './component/side-menus/accound-holder/reels-page/saved-reels/saved-reels';
 import CheckIns from './component/side-menus/accound-holder/more/checkIns';
+import PersonDetails from './component/side-menus/accound-holder/more/person-details/person-details';
+import MusicArtists from './component/side-menus/accound-holder/more/music-artists/music-artists';
+import Music from './component/side-menus/accound-holder/more/music-artists/music/music';
+import Movies from './component/side-menus/accound-holder/more/movies/movies';
+import MoviesWatched from './component/side-menus/accound-holder/more/movies/watched/watched';
+import Movie from './component/side-menus/accound-holder/more/movies/movie/movie';
+import WatchedTvShows from './component/side-menus/accound-holder/more/tv-shows/watched-tvShows';
+import WatchedTv from './component/side-menus/accound-holder/more/tv-shows/watchedTv/watchedTv';
+import TvShow from './component/side-menus/accound-holder/more/tv-shows/tvShow/tvShow';
 
 function App() {
 
@@ -86,7 +95,21 @@ function App() {
                       <Route path='/accountDetails/reelPage/savedReels' element={<SavedReels />} />
                     </Route>
                     <Route path='/accountDetails/checkIns' element={<CheckIns />} >
+                      <Route path='/accountDetails/checkIns/personDetails' element={<PersonDetails />} />
+                      {/* <Route path='/accountDetails/checkIns/music' element={<Music />} /> */}
+                    </Route>
+                    <Route path='/accountDetails/musicArtists' element={<MusicArtists />} >
+                      <Route path='/accountDetails/musicArtists/music' element={<Music />} />
+                      
+                    </Route>
+                      <Route path='/accountDetails/movies' element={<Movies />} >
+                      <Route path='/accountDetails/movies/musicWatched' element={<MoviesWatched />} />
+                      <Route path='/accountDetails/movies/movie' element={<Movie />} />
+                    </Route>
 
+                    <Route path='/accountDetails/watchedTvShows' element={<WatchedTvShows />} >
+                      <Route path='/accountDetails/watchedTvShows/watchedTv' element={<WatchedTv />} />
+                      <Route path='/accountDetails/watchedTvShows/tvShow' element={<TvShow />} />
                     </Route>
                 </Route>
                   <Route path='/videos' element={<Videos/>} />

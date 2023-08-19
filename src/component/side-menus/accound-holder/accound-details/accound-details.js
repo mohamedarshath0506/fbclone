@@ -14,6 +14,8 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
+import MusicArtists from "../more/music-artists/music-artists"
+
 function AccountDetails() {
 
     const [age, setAge] = React.useState('');
@@ -65,11 +67,11 @@ function AccountDetails() {
                                 onChange={handleChange}
                             >
                                 <MenuItem value="" style={{width: "330px"}}><em>None</em></MenuItem>
-                            <NavLink to="/accountDetails/checkIns"><MenuItem value={10} style={{width: "330px"}}>Check-ins</MenuItem></NavLink>
+                            <NavLink to="/accountDetails/checkIns" style={{textDecoration: "none"}}><MenuItem value={10} style={{width: "330px", fontSize: "15px", color: "#000"}}>Check-ins</MenuItem></NavLink>
                                 <MenuItem value={20}>Sports</MenuItem>
-                                <MenuItem value={30}>Music</MenuItem>
-                                <MenuItem value={40}>Movies</MenuItem>
-                                <MenuItem value={50}>TV shows</MenuItem>
+                            <NavLink to="/accountDetails/musicArtists" style={{textDecoration: "none"}}><MenuItem value={30} style={{width: "330px", fontSize: "15px", color: "#000"}}>Music</MenuItem></NavLink>
+                            <NavLink to="/accountDetails/movies" style={{textDecoration: "none"}}><MenuItem value={40} style={{width: "330px", fontSize: "15px", color: "#000"}}>Movies</MenuItem></NavLink>
+                            <NavLink to="/accountDetails/watchedTvShows" style={{textDecoration: "none"}}><MenuItem value={50} style={{width: "330px", fontSize: "15px", color: "#000"}}>TV shows</MenuItem></NavLink>
                                 <MenuItem value={60}>Books</MenuItem>
                                 <MenuItem value={70}>Apps and games</MenuItem>
                                 <MenuItem value={80}>Likes</MenuItem>
