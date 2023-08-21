@@ -1,19 +1,31 @@
-import { Outlet } from "react-router";
 import { NavLink } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import thondiCity from "../../../../../image/thondi-city.jpg"
 
-function MusicArtists() {
+function Sports() {
     return (
         <div>
+        <div className="checkIns-container">
+            <div className="check-ins-header">
+                <p>Sports</p>
+            </div>
+            <div className="recent-content" style={{paddingLeft: "10px"}}>
+            <NavLink to="/accountDetails/sports/sportsTeams" style={{textDecoration:"none"}}><p>Sports Teams</p></NavLink>
+            <NavLink to="/accountDetails/sports/athletesSports" style={{textDecoration:"none"}}><p>Athletes</p></NavLink>
+            </div>
+            <div>
+                <Outlet />
+            </div>
+        </div>
         <div className="checkIns-container">
                 <div className="check-ins-header">
                     <p>Music</p>
                 </div>
-                <div className="recent-content" style={{paddingLeft: "10px"}}>
-                  <NavLink to="/accountDetails/musicArtists/music" style={{textDecoration: "none"}}><p>Artists</p></NavLink>
+                <div className="recent-content">
+                    <p>Artists</p>
                 </div>
                 <div>
-                    <Outlet />
+                    <p style={{fontSize: "20px", fontWeight: 600, margin: 0, padding: "24px 0 36px", color:"#65646b"}}>No Artists to show</p>
                 </div>
             </div>
             <div className="checkIns-container">
@@ -68,4 +80,4 @@ function MusicArtists() {
     )
 }
 
-export default MusicArtists;
+export default Sports;

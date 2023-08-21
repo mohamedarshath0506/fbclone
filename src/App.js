@@ -45,6 +45,14 @@ import Movie from './component/side-menus/accound-holder/more/movies/movie/movie
 import WatchedTvShows from './component/side-menus/accound-holder/more/tv-shows/watched-tvShows';
 import WatchedTv from './component/side-menus/accound-holder/more/tv-shows/watchedTv/watchedTv';
 import TvShow from './component/side-menus/accound-holder/more/tv-shows/tvShow/tvShow';
+import BooksAndRead from './component/side-menus/accound-holder/more/movies/movie/books/books';
+import ReadBooks from './component/side-menus/accound-holder/more/movies/movie/books/read-books/read-books';
+import BooksRead from './component/side-menus/accound-holder/more/movies/movie/books/booksRead/booksRead';
+import AppsAndGames from './component/side-menus/accound-holder/more/appsAndGames/appsAndGames';
+import Merdekagame from './component/side-menus/accound-holder/more/appsAndGames/merdekagame/merdekagame';
+import Sports from './component/side-menus/accound-holder/more/sports/sports';
+import SportsTeams from './component/side-menus/accound-holder/more/sports/sportsTeams/sportsTeams';
+import AthletesSports from './component/side-menus/accound-holder/more/sports/athletesSports/athletesSports';
 
 function App() {
 
@@ -110,6 +118,17 @@ function App() {
                     <Route path='/accountDetails/watchedTvShows' element={<WatchedTvShows />} >
                       <Route path='/accountDetails/watchedTvShows/watchedTv' element={<WatchedTv />} />
                       <Route path='/accountDetails/watchedTvShows/tvShow' element={<TvShow />} />
+                    </Route>
+                    <Route path='/accountDetails/booksAndRead' element={<BooksAndRead />} >
+                      <Route path='/accountDetails/booksAndRead/readBooks' element={<ReadBooks />} />
+                      <Route path='/accountDetails/booksAndRead/booksRead' element={<BooksRead />} />
+                    </Route>
+                    <Route path='/accountDetails/appsAndGames' element={<AppsAndGames />} >
+                      <Route path='/accountDetails/appsAndGames/merdekagame' element={<Merdekagame />} />
+                    </Route>
+                    <Route path='/accountDetails/sports' element={<Sports />} >
+                      <Route path='/accountDetails/sports/sportsTeams' element={<SportsTeams />} />
+                      <Route path='/accountDetails/sports/athletesSports' element={<AthletesSports />} />
                     </Route>
                 </Route>
                   <Route path='/videos' element={<Videos/>} />

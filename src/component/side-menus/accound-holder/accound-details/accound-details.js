@@ -68,12 +68,12 @@ function AccountDetails() {
                             >
                                 <MenuItem value="" style={{width: "330px"}}><em>None</em></MenuItem>
                             <NavLink to="/accountDetails/checkIns" style={{textDecoration: "none"}}><MenuItem value={10} style={{width: "330px", fontSize: "15px", color: "#000"}}>Check-ins</MenuItem></NavLink>
-                                <MenuItem value={20}>Sports</MenuItem>
+                            <NavLink to="/accountDetails/sports" style={{textDecoration: "none"}}><MenuItem value={20} style={{width: "330px", fontSize: "15px", color: "#000"}}>Sports</MenuItem></NavLink>
                             <NavLink to="/accountDetails/musicArtists" style={{textDecoration: "none"}}><MenuItem value={30} style={{width: "330px", fontSize: "15px", color: "#000"}}>Music</MenuItem></NavLink>
                             <NavLink to="/accountDetails/movies" style={{textDecoration: "none"}}><MenuItem value={40} style={{width: "330px", fontSize: "15px", color: "#000"}}>Movies</MenuItem></NavLink>
                             <NavLink to="/accountDetails/watchedTvShows" style={{textDecoration: "none"}}><MenuItem value={50} style={{width: "330px", fontSize: "15px", color: "#000"}}>TV shows</MenuItem></NavLink>
-                                <MenuItem value={60}>Books</MenuItem>
-                                <MenuItem value={70}>Apps and games</MenuItem>
+                            <NavLink to="/accountDetails/booksAndRead" style={{textDecoration: "none"}}><MenuItem value={60} style={{width: "330px", fontSize: "15px", color: "#000"}}>Books</MenuItem></NavLink>
+                            <NavLink to="/accountDetails/appsAndGames" style={{textDecoration: "none"}}><MenuItem value={70} style={{width: "330px", fontSize: "15px", color: "#000"}}>Apps and games</MenuItem></NavLink>
                                 <MenuItem value={80}>Likes</MenuItem>
                                 <MenuItem value={90}>Events</MenuItem>
                                 <MenuItem value={100}>Reviews given</MenuItem>

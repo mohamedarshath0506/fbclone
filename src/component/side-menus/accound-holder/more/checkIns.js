@@ -1,10 +1,7 @@
 import { Outlet } from "react-router"
-import camera from "../../../../image/camera-man.jpeg"
-import msClg from "../../../../image/mohamedsathakclg.jpg"
-import thondIBeach from "../../../../image/thondi-beach.jpg"
 import thondiCity from "../../../../image/thondi-city.jpg"
-import threeDot from "../../../../image/three-dot.png"
 import { NavLink } from "react-router-dom"
+// import Sports from "./sports/sports"
 
 function CheckIns() {
     return (
@@ -32,12 +29,9 @@ function CheckIns() {
                     <p>Music</p>
                 </div>
                 <div className="recent-content">
-                   {/* <NavLink to="/accountDetails/checkIns/music" > */}
                     <p>Artists</p>
-                    {/* </NavLink>  */}
                 </div>
                 <div>
-                    {/* <Outlet /> */}
                     <p style={{fontSize: "20px", fontWeight: 600, margin: 0, padding: "24px 0 36px", color:"#65646b"}}>No Artists to show</p>
                 </div>
             </div>
